@@ -24,6 +24,7 @@ tailwind.config = {
       },
       backgroundColor: {
         body: "#0a192f",
+        navy: "#112240",
       },
       textColor: {
         default: "#8892b0",

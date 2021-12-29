@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -31,28 +31,93 @@
         <nav class="main-header__nav">
           <ul class="flex items-center justify-around list-none">
             <li class="my-0 mx-4">
-              <a href="/#about" class="no-underline text-sm active">About</a>
+              <a
+                href="#about"
+                class="no-underline text-sm hover:text-primary-400"
+                >About</a
+              >
             </li>
             <li class="my-0 mx-4">
-              <a href="/#jobs" class="no-underline text-sm">Experience</a>
+              <a href="#job" class="no-underline text-sm hover:text-primary-400"
+                >Experience</a
+              >
             </li>
             <li class="my-0 mx-4">
-              <a href="/#projects" class="no-underline text-sm">Work</a>
+              <a
+                href="#project"
+                class="no-underline text-sm hover:text-primary-400"
+                >Work</a
+              >
             </li>
             <li class="my-0 mx-4">
-              <a href="/#contact" class="no-underline text-sm">Contact</a>
+              <a
+                href="#contact"
+                class="no-underline text-sm hover:text-primary-400"
+                >Contact</a
+              >
             </li>
             <li class="my-0 mx-4">
-              <a href="#" class="no-underline text-sm">Resume</a>
+              <a href="#" class="no-underline text-sm hover:text-primary-400"
+                >Resume</a
+              >
             </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main class="mx-40">
+    <!-- Start Social -->
+    <div class="w-10 fixed bottom-0 left-24 right-auto z-10">
+      <ul
+        class="
+          flex flex-col
+          items-center
+          list-none
+          m-0
+          p-0
+          after:content-['']
+          after:block
+          after:w-px
+          after:h-36
+          after:m-auto
+          after:bg-primary-400
+        "
+      >
+        <li class="p-4">
+          <a href="#" target="_blank" rel="noopener noreferrer"></a>
+        </li>
+      </ul>
+    </div>
+    <!-- End Social -->
+
+    <!-- Start Email -->
+    <div class="w-10 fixed bottom-0 left-auto right-24 z-10">
+      <div
+        class="
+          flex flex-col
+          items-center
+          after:content-['']
+          after:block
+          after:w-px
+          after:h-36
+          after:m-auto
+          after:bg-primary-400
+        "
+      >
+        <a
+          class="text-sm p-4 tracking-widest"
+          href="mailto:anlishamaharjan@gmail.com"
+          >anlishamaharjan@gmail.com</a
+        >
+      </div>
+    </div>
+    <!-- End Email -->
+
+    <!-- Start Main -->
+    <main class="mx-96">
+      <!-- Start -->
       <section
-        class="container h-[100vh] flex flex-col items-start justify-center"
+        class="container h-[90vh] flex flex-col items-start justify-center"
       >
         <h6 class="text-lg font-normal mb-6 text-primary-400 tracking-wider">
           Hi, my name is
@@ -71,14 +136,29 @@
           >
         </p>
       </section>
+      <!-- End -->
 
-      <section class="container py-40 px-14">
+      <!-- Start About Me -->
+      <section id="about" class="container py-28 px-20">
         <h4
-          class="section-header flex items-center text-3xl font-semibold mb-12"
+          class="
+            after:content-['']
+            after:block
+            after:relative
+            after:ml-8
+            after:w-96
+            after:h-px
+            after:bg-primary-400
+            flex
+            items-center
+            text-3xl
+            font-semibold
+            mb-12
+          "
         >
           About Me
         </h4>
-        <div class="grid grid-cols-3 gap-2">
+        <div class="grid grid-cols-3 gap-12">
           <div class="col-span-2">
             <p class="text-lg max-w-2xl mb-6">
               Hello! My name is Anlisha and I enjoy creating things that live on
@@ -98,25 +178,153 @@
               Here are a few technologies I’ve been working with recently:
             </p>
             <ul class="grid grid-cols-2 gap-2 list-none">
-              <li class="text-sm tracking-wider mb-2">JavaScript (ES6+)</li>
-              <li class="text-sm tracking-wider mb-2">TypeScript</li>
-              <li class="text-sm tracking-wider mb-2">React</li>
-              <li class="text-sm tracking-wider mb-2">Wordpress</li>
-              <li class="text-sm tracking-wider mb-2">Laravel</li>
-              <li class="text-sm tracking-wider mb-2">React Native</li>
+              <li
+                class="
+                  text-sm
+                  tracking-wider
+                  mb-2
+                  pl-5
+                  relative
+                  before:content-['▹']
+                  before:text-primary-400
+                  before:absolute
+                  before:left-0
+                  before:leading-4
+                "
+              >
+                JavaScript (ES6+)
+              </li>
+              <li
+                class="
+                  text-sm
+                  tracking-wider
+                  mb-2
+                  pl-5
+                  relative
+                  before:content-['▹']
+                  before:text-primary-400
+                  before:absolute
+                  before:left-0
+                  before:leading-4
+                "
+              >
+                TypeScript
+              </li>
+              <li
+                class="
+                  text-sm
+                  tracking-wider
+                  mb-2
+                  pl-5
+                  relative
+                  before:content-['▹']
+                  before:text-primary-400
+                  before:absolute
+                  before:left-0
+                  before:leading-4
+                "
+              >
+                React
+              </li>
+              <li
+                class="
+                  text-sm
+                  tracking-wider
+                  mb-2
+                  pl-5
+                  relative
+                  before:content-['▹']
+                  before:text-primary-400
+                  before:absolute
+                  before:left-0
+                  before:leading-4
+                "
+              >
+                React Native
+              </li>
+              <li
+                class="
+                  text-sm
+                  tracking-wider
+                  mb-2
+                  pl-5
+                  relative
+                  before:content-['▹']
+                  before:text-primary-400
+                  before:absolute
+                  before:left-0
+                  before:leading-4
+                "
+              >
+                Laravel
+              </li>
+              <li
+                class="
+                  text-sm
+                  tracking-wider
+                  mb-2
+                  pl-5
+                  relative
+                  before:content-['▹']
+                  before:text-primary-400
+                  before:absolute
+                  before:left-0
+                  before:leading-4
+                "
+              >
+                Wordpress
+              </li>
             </ul>
           </div>
           <div class="col-span-1">
-            <div class="shadow-md rounded-md">
-              <img class="" src="./assets/image/me.png" title="Anlisha" />
+            <div
+              class="
+                block
+                relative
+                shadow-md
+                rounded-md
+                w-full
+                after:content-['']
+                after:absolute
+                after:w-full
+                after:h-full
+                after:border-solid
+                after:border-2
+                after:border-primary-400
+                after:top-4
+                after:left-4
+                after:-z-10
+                after:rounded-md
+              "
+            >
+              <img
+                class="relative rounded-md w-full"
+                src="https://images.unsplash.com/photo-1610276198568-eb6d0ff53e48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                title="Anlisha"
+              />
             </div>
           </div>
         </div>
       </section>
+      <!-- End About Me -->
 
-      <section class="container py-40 px-32">
+      <!-- Start Experience -->
+      <section id="job" class="container py-28 px-40">
         <h4
-          class="section-header flex items-center text-3xl font-semibold mb-12"
+          class="
+            after:content-['']
+            after:block
+            after:relative
+            after:ml-8
+            after:w-96
+            after:h-px
+            after:bg-primary-400
+            flex
+            items-center
+            text-3xl
+            font-semibold
+            mb-12
+          "
         >
           Where I’ve Worked
         </h4>
@@ -137,7 +345,7 @@
               <div class="flex flex-col justify-start w-1/4 space-y-4">
                 <a
                   class="px-4 py-2 text-sm tracking-wider"
-                  :class="{'z-20 border-l-2 transform translate-x-2 border-teal-500 font-bold': tab === 1, ' transform -translate-x-2': tab !== 1}"
+                  :class="{'z-20 border-l-2 transform translate-x-2 border-primary-400 font-bold': tab === 1, ' transform -translate-x-2': tab !== 1}"
                   href="#"
                   @click.prevent="tab = 1"
                 >
@@ -145,7 +353,7 @@
                 </a>
                 <a
                   class="px-4 py-2 text-sm tracking-wider"
-                  :class="{'z-20 border-l-2 transform translate-x-2 border-teal-500 font-bold': tab === 2, ' transform -translate-x-2': tab !== 2}"
+                  :class="{'z-20 border-l-2 transform translate-x-2 border-primary-400 font-bold': tab === 2, ' transform -translate-x-2': tab !== 2}"
                   href="#"
                   @click.prevent="tab = 2"
                   @click.prevent="tab = 2"
@@ -154,10 +362,19 @@
                 </a>
                 <a
                   class="px-4 py-2 text-sm tracking-wider"
-                  :class="{'z-20 border-l-2 transform translate-x-2 border-teal-500 font-bold': tab === 3, ' transform -translate-x-2': tab !== 3}"
+                  :class="{'z-20 border-l-2 transform translate-x-2 border-primary-400 font-bold': tab === 3, ' transform -translate-x-2': tab !== 3}"
                   href="#"
                   @click.prevent="tab = 3"
                   @click.prevent="tab = 3"
+                >
+                  Improvement Company Nepal
+                </a>
+                <a
+                  class="px-4 py-2 text-sm tracking-wider"
+                  :class="{'z-20 border-l-2 transform translate-x-2 border-primary-400 font-bold': tab === 4, ' transform -translate-x-2': tab !== 4}"
+                  href="#"
+                  @click.prevent="tab = 4"
+                  @click.prevent="tab = 4"
                 >
                   Grafi Offshore
                 </a>
@@ -184,12 +401,59 @@
                     x-transition:enter="transition delay-100 duration-500 transform ease-in"
                     x-transition:enter-start="opacity-0"
                   >
-                    Jan 2020 - Present
+                    Jan 2019 - Present
                   </p>
                   <ul class="list-none">
-                    <li class="text-sm mb-2">
-                      Write modern, performant, maintainable code for a diverse
-                      array of client and internal projects
+                    <li
+                      class="
+                        text-sm
+                        mb-4
+                        pl-5
+                        relative
+                        before:content-['▹']
+                        before:text-lg
+                        before:text-primary-400
+                        before:absolute
+                        before:left-0
+                      "
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.Lorem Ipsum is simply dummy text of
+                      the printing and typesetting industry.
+                    </li>
+                    <li
+                      class="
+                        text-sm
+                        mb-4
+                        pl-5
+                        relative
+                        before:content-['▹']
+                        before:text-lg
+                        before:text-primary-400
+                        before:absolute
+                        before:left-0
+                      "
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.Lorem Ipsum is simply dummy text of
+                      the printing and typesetting industry.
+                    </li>
+                    <li
+                      class="
+                        text-sm
+                        mb-4
+                        pl-5
+                        relative
+                        before:content-['▹']
+                        before:text-lg
+                        before:text-primary-400
+                        before:absolute
+                        before:left-0
+                      "
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.Lorem Ipsum is simply dummy text of
+                      the printing and typesetting industry.
                     </li>
                   </ul>
                 </div>
@@ -215,12 +479,59 @@
                     x-transition:enter="transition delay-100 duration-500 transform ease-in"
                     x-transition:enter-start="opacity-0"
                   >
-                    Jan 2017 - Dec 2019
+                    Dec 2016 - Dec 2018
                   </p>
                   <ul class="list-none">
-                    <li class="text-sm mb-2">
-                      Write modern, performant, maintainable code for a diverse
-                      array of client and internal projects
+                    <li
+                      class="
+                        text-sm
+                        mb-4
+                        pl-5
+                        relative
+                        before:content-['▹']
+                        before:text-lg
+                        before:text-primary-400
+                        before:absolute
+                        before:left-0
+                      "
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.Lorem Ipsum is simply dummy text of
+                      the printing and typesetting industry.
+                    </li>
+                    <li
+                      class="
+                        text-sm
+                        mb-4
+                        pl-5
+                        relative
+                        before:content-['▹']
+                        before:text-lg
+                        before:text-primary-400
+                        before:absolute
+                        before:left-0
+                      "
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.Lorem Ipsum is simply dummy text of
+                      the printing and typesetting industry.
+                    </li>
+                    <li
+                      class="
+                        text-sm
+                        mb-4
+                        pl-5
+                        relative
+                        before:content-['▹']
+                        before:text-lg
+                        before:text-primary-400
+                        before:absolute
+                        before:left-0
+                      "
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.Lorem Ipsum is simply dummy text of
+                      the printing and typesetting industry.
                     </li>
                   </ul>
                 </div>
@@ -232,7 +543,85 @@
                     x-transition:enter="transition duration-500 transform ease-in"
                     x-transition:enter-start="opacity-0"
                   >
-                    Software Developer
+                    PHP Developer
+                    <a
+                      class="text-primary-400"
+                      target="_blank"
+                      href="https://www.idnepal.com"
+                      >@ Improvement Company Nepal</a
+                    >
+                  </h3>
+                  <p
+                    class="text-sm tracking-wider"
+                    x-show="tab === 3"
+                    x-transition:enter="transition delay-100 duration-500 transform ease-in"
+                    x-transition:enter-start="opacity-0"
+                  >
+                    June 2016 - Dec 2016
+                  </p>
+                  <ul class="list-none">
+                    <li
+                      class="
+                        text-sm
+                        mb-4
+                        pl-5
+                        relative
+                        before:content-['▹']
+                        before:text-lg
+                        before:text-primary-400
+                        before:absolute
+                        before:left-0
+                      "
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.Lorem Ipsum is simply dummy text of
+                      the printing and typesetting industry.
+                    </li>
+                    <li
+                      class="
+                        text-sm
+                        mb-4
+                        pl-5
+                        relative
+                        before:content-['▹']
+                        before:text-lg
+                        before:text-primary-400
+                        before:absolute
+                        before:left-0
+                      "
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.Lorem Ipsum is simply dummy text of
+                      the printing and typesetting industry.
+                    </li>
+                    <li
+                      class="
+                        text-sm
+                        mb-4
+                        pl-5
+                        relative
+                        before:content-['▹']
+                        before:text-lg
+                        before:text-primary-400
+                        before:absolute
+                        before:left-0
+                      "
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.Lorem Ipsum is simply dummy text of
+                      the printing and typesetting industry.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="space-y-3" x-show="tab === 4">
+                  <h3
+                    class="text-base font-semibold leading-tight"
+                    x-show="tab === 4"
+                    x-transition:enter="transition duration-500 transform ease-in"
+                    x-transition:enter-start="opacity-0"
+                  >
+                    PHP Trainee
                     <a
                       class="text-primary-400"
                       target="_blank"
@@ -242,14 +631,64 @@
                   </h3>
                   <p
                     class="text-sm tracking-wider"
-                    x-show="tab === 3"
+                    x-show="tab === 4"
                     x-transition:enter="transition delay-100 duration-500 transform ease-in"
                     x-transition:enter-start="opacity-0"
                   >
-                    Jan 2017 - Dec 2019
+                    Sep 2015 - June 2016
                   </p>
                   <ul class="list-none">
-                    <li class="text-sm mb-2"></li>
+                    <li
+                      class="
+                        text-sm
+                        mb-4
+                        pl-5
+                        relative
+                        before:content-['▹']
+                        before:text-lg
+                        before:text-primary-400
+                        before:absolute
+                        before:left-0
+                      "
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.Lorem Ipsum is simply dummy text of
+                      the printing and typesetting industry.
+                    </li>
+                    <li
+                      class="
+                        text-sm
+                        mb-4
+                        pl-5
+                        relative
+                        before:content-['▹']
+                        before:text-lg
+                        before:text-primary-400
+                        before:absolute
+                        before:left-0
+                      "
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.Lorem Ipsum is simply dummy text of
+                      the printing and typesetting industry.
+                    </li>
+                    <li
+                      class="
+                        text-sm
+                        mb-4
+                        pl-5
+                        relative
+                        before:content-['▹']
+                        before:text-lg
+                        before:text-primary-400
+                        before:absolute
+                        before:left-0
+                      "
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.Lorem Ipsum is simply dummy text of
+                      the printing and typesetting industry.
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -257,30 +696,261 @@
           </div>
         </div>
       </section>
+      <!-- End Experience -->
 
-      <section class="container py-40 px-14">
+      <!-- Start Featured Project -->
+      <section id="project" class="container py-28 px-3">
         <h4
-          class="section-header flex items-center text-3xl font-semibold mb-12"
+          class="
+            after:content-['']
+            after:block
+            after:relative
+            after:ml-8
+            after:w-96
+            after:h-px
+            after:bg-primary-400
+            flex
+            items-center
+            text-3xl
+            font-semibold
+            mb-12
+          "
         >
           Some Things I’ve Built
         </h4>
       </section>
+      <!-- End Featured Project -->
 
-      <section class="container py-32 px-14 text-center">
-        <h4 class="text-3xl font-semibold mb-12">Other Noteworthy Projects</h4>
+      <!-- Start Project -->
+      <section class="container py-28 px-3 text-center">
+        <h4 class="text-3xl font-semibold mb-14">Other Noteworthy Projects</h4>
+        <ul class="mt-10 grid grid-cols-3 gap-6 list-none">
+          <li
+            class="
+              flex flex-col
+              items-start
+              justify-between
+              bg-navy
+              relative
+              px-8
+              h-full
+              py-7
+              shadow-md
+              rounded-md
+              text-left
+              group
+              cursor-pointer
+            "
+          >
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <h5
+                class="text-lg font-semibold mb-4 group-hover:text-primary-500"
+              >
+                Lorem Ipsum is simply dummy text of the printing.
+              </h5>
+              <p class="text-sm tracking-wider mb-6">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+              </p>
+              <ul class="flex items-end grow flex-wrap list-none">
+                <li class="text-xs mr-6 leading-6">HTML</li>
+                <li class="text-xs mr-6 leading-6">CSS</li>
+                <li class="text-xs mr-6 leading-6">PHP</li>
+              </ul>
+            </a>
+          </li>
+          <li
+            class="
+              flex flex-col
+              items-start
+              justify-between
+              bg-navy
+              relative
+              px-8
+              h-full
+              py-7
+              shadow-md
+              rounded-md
+              text-left
+              group
+              cursor-pointer
+            "
+          >
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <h5
+                class="text-lg font-semibold mb-4 group-hover:text-primary-500"
+              >
+                Lorem Ipsum is simply dummy text of the printing.
+              </h5>
+              <p class="text-sm tracking-wider mb-6">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+              </p>
+              <ul class="flex items-end grow flex-wrap list-none">
+                <li class="text-xs mr-6 leading-6">HTML</li>
+                <li class="text-xs mr-6 leading-6">CSS</li>
+                <li class="text-xs mr-6 leading-6">PHP</li>
+              </ul>
+            </a>
+          </li>
+          <li
+            class="
+              flex flex-col
+              items-start
+              justify-between
+              bg-navy
+              relative
+              px-8
+              h-full
+              py-7
+              shadow-md
+              rounded-md
+              text-left
+              group
+              cursor-pointer
+            "
+          >
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <h5
+                class="text-lg font-semibold mb-4 group-hover:text-primary-500"
+              >
+                Lorem Ipsum is simply dummy text of the printing.
+              </h5>
+              <p class="text-sm tracking-wider mb-6">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+              </p>
+              <ul class="flex items-end grow flex-wrap list-none">
+                <li class="text-xs mr-6 leading-6">HTML</li>
+                <li class="text-xs mr-6 leading-6">CSS</li>
+                <li class="text-xs mr-6 leading-6">PHP</li>
+              </ul>
+            </a>
+          </li>
+          <li
+            class="
+              flex flex-col
+              items-start
+              justify-between
+              bg-navy
+              relative
+              px-8
+              h-full
+              py-7
+              shadow-md
+              rounded-md
+              text-left
+              group
+              cursor-pointer
+            "
+          >
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <h5
+                class="text-lg font-semibold mb-4 group-hover:text-primary-500"
+              >
+                Lorem Ipsum is simply dummy text of the printing.
+              </h5>
+              <p class="text-sm tracking-wider mb-6">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+              </p>
+              <ul class="flex items-end grow flex-wrap list-none">
+                <li class="text-xs mr-6 leading-6">HTML</li>
+                <li class="text-xs mr-6 leading-6">CSS</li>
+                <li class="text-xs mr-6 leading-6">PHP</li>
+              </ul>
+            </a>
+          </li>
+          <li
+            class="
+              flex flex-col
+              items-start
+              justify-between
+              bg-navy
+              relative
+              px-8
+              h-full
+              py-7
+              shadow-md
+              rounded-md
+              text-left
+              group
+              cursor-pointer
+            "
+          >
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <h5
+                class="text-lg font-semibold mb-4 group-hover:text-primary-500"
+              >
+                Lorem Ipsum is simply dummy text of the printing.
+              </h5>
+              <p class="text-sm tracking-wider mb-6">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+              </p>
+              <ul class="flex items-end grow flex-wrap list-none">
+                <li class="text-xs mr-6 leading-6">HTML</li>
+                <li class="text-xs mr-6 leading-6">CSS</li>
+                <li class="text-xs mr-6 leading-6">PHP</li>
+              </ul>
+            </a>
+          </li>
+          <li
+            class="
+              flex flex-col
+              items-start
+              justify-between
+              bg-navy
+              relative
+              px-8
+              h-full
+              py-7
+              shadow-md
+              rounded-md
+              text-left
+              group
+              cursor-pointer
+            "
+          >
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <h5
+                class="text-lg font-semibold mb-4 group-hover:text-primary-500"
+              >
+                Lorem Ipsum is simply dummy text of the printing.
+              </h5>
+              <p class="text-sm tracking-wider mb-6">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+              </p>
+              <ul class="flex items-end grow flex-wrap list-none">
+                <li class="text-xs mr-6 leading-6">HTML</li>
+                <li class="text-xs mr-6 leading-6">CSS</li>
+                <li class="text-xs mr-6 leading-6">PHP</li>
+              </ul>
+            </a>
+          </li>
+        </ul>
       </section>
+      <!-- End Project -->
 
-      <section class="container py-32 px-48 text-center">
+      <!-- Start Contact -->
+      <section
+        id="contact"
+        class="container py-28 flex flex-col items-center justify-center"
+      >
         <h6 class="text-lg font-normal mb-6 text-primary-400 tracking-wider">
           What’s Next?
         </h6>
         <h3 class="text-6xl font-semibold mb-6">Get In Touch</h3>
         <p class="text-lg max-w-2xl mb-12">
-          Although I’m not currently looking for any new opportunities, my inbox
-          is <br />
-          always open. Whether you have a question or just want to say hi, I’ll
-          try my <br />
-          best to get back to you!
+          Drop Me a Line or Two, my inbox is always open. <br />
+          Whether you have a question or want to work together!
         </p>
         <a
           class="
@@ -293,30 +963,74 @@
             rounded
             py-3
             px-5
+            hover:bg-primary-800
           "
           href="mailto:anlishamaharjan@gmail.com"
           rel="noopener noreferrer"
           target="_blank"
-          >Say Hello</a
+          >Say Hi!</a
         >
       </section>
+      <!-- End Contact -->
     </main>
-
-    <footer
-      class="flex flex-col items-center justify-center text-center py-6 px-5"
-    >
+    <!-- End Main -->
+    <!-- Start Footer -->
+    <footer class="flex flex-col items-center justify-center py-6">
       <p class="text-sm tracking-wider">
         <a
           href="https://github.com/anlisha-maharjan"
           rel="noopener noreferrer"
           target="_blank"
+          class="hover:text-primary-400"
           >Built by Anlisha Maharjan</a
         >
       </p>
     </footer>
+    <!-- End Footer -->
     <!-- jQuery 3.6.0 -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js"></script>
     <script src="./tailwind.config.js"></script>
+    <script type="">
+      jQuery(document).ready(function ($) {
+        $('a[href*="#"]').click(function (event) {
+          if (
+            location.pathname.replace(/^\//, "") ==
+              this.pathname.replace(/^\//, "") &&
+            location.hostname == this.hostname
+          ) {
+            // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length
+              ? target
+              : $("[name=" + this.hash.slice(1) + "]");
+            // Does a scroll target exist?
+            if (target.length) {
+              // Only prevent default if animation is actually gonna happen
+              event.preventDefault();
+              $("html, body").animate(
+                {
+                  scrollTop: target.offset().top,
+                },
+                5,
+                function () {
+                  // Callback after animation
+                  // Must change focus!
+                  var $target = $(target);
+                  $target.focus();
+                  if ($target.is(":focus")) {
+                    // Checking if the target was focused
+                    return false;
+                  } else {
+                    $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
+                    $target.focus(); // Set focus again
+                  }
+                }
+              );
+            }
+          }
+        });
+      });
+    </script>
   </body>
 </html>
