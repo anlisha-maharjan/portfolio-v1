@@ -1,24 +1,16 @@
 @import "./tailwind";
 @import "./variable";
 
-/* ===== Start Header =====*/
-.main-header {
-  &__nav {
-    ul > li > a {
-      &.active {
-        color: $primaryColor;
-      }
-    }
-  }
+::-webkit-scrollbar {
+  width: 6px;
 }
-/* ===== End Header =====*/
 
-.section-header::after {
-  content: "";
-  display: block;
-  position: relative;
-  width: 27rem;
-  height: 1px;
-  margin-left: 2rem;
-  background-color: rgba($color: $textColor, $alpha: 0.3);
+::-webkit-scrollbar-track {
+  background-color: $bodyBg;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $textColor;
+  border-radius: 100px;
 }
