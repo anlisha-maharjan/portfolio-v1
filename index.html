@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+      name="viewport"
+    />
+    <title>Anlisha Maharjan</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Theme style -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body class="bg-body text-default font-body text-base leading-normal">
+    <header class="main-header w-full fixed px-12 z-auto top-0 left-0">
+      <div class="flex items-center justify-between">
+        <a href="">
+          <img
+            class="w-full h-36"
+            src="./assets/image/logo.png"
+            title="Anlisha"
+          />
+        </a>
+        <nav class="main-header__nav">
+          <ul class="flex items-center justify-around list-none">
+            <li class="my-0 mx-4">
+              <a href="/#about" class="no-underline text-sm active">About</a>
+            </li>
+            <li class="my-0 mx-4">
+              <a href="/#jobs" class="no-underline text-sm">Experience</a>
+            </li>
+            <li class="my-0 mx-4">
+              <a href="/#projects" class="no-underline text-sm">Work</a>
+            </li>
+            <li class="my-0 mx-4">
+              <a href="/#contact" class="no-underline text-sm">Contact</a>
+            </li>
+            <li class="my-0 mx-4">
+              <a href="#" class="no-underline text-sm">Resume</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mx-40">
+      <section
+        class="container h-[100vh] flex flex-col items-start justify-center"
+      >
+        <h6 class="text-lg font-normal mb-6 text-primary-400 tracking-wider">
+          Hi, my name is
+        </h6>
+        <h2 class="text-7xl font-semibold mb-6">Anlisha Maharjan.</h2>
+        <h3 class="text-7xl font-semibold mb-6">I build things for the web.</h3>
+        <p class="text-lg max-w-2xl">
+          I'm a software engineer specializing in building exceptional digital
+          experiences. Currently, I'm focused on building accessible,
+          human-centered products at
+          <a
+            class="text-primary-400"
+            target="_blank"
+            href="https://www.idnepal.com"
+            >Innovation Developers Nepal.</a
+          >
+        </p>
+      </section>
+
+      <section class="container py-40 px-14">
+        <h4
+          class="section-header flex items-center text-3xl font-semibold mb-12"
+        >
+          About Me
+        </h4>
+        <div class="grid grid-cols-3 gap-2">
+          <div class="col-span-2">
+            <p class="text-lg max-w-2xl mb-6">
+              Hello! My name is Anlisha and I enjoy creating things that live on
+              the internet. My interest in web development started back in 2016
+              when I decided to try editing custom Tumblr themes — turns out
+              hacking together a custom reblog button taught me a lot about HTML
+              & CSS!
+            </p>
+            <p class="text-lg max-w-2xl mb-6">
+              Fast-forward to today, and I’ve had the privilege of working at an
+              advertising agency, a start-up, a huge corporation, and a
+              student-led design studio. My main focus these days is building
+              accessible, inclusive products and digital experiences at
+              Innovation Developers for a variety of clients.
+            </p>
+            <p class="text-lg max-w-2xl mb-6">
+              Here are a few technologies I’ve been working with recently:
+            </p>
+            <ul class="grid grid-cols-2 gap-2 list-none">
+              <li class="text-sm tracking-wider mb-2">JavaScript (ES6+)</li>
+              <li class="text-sm tracking-wider mb-2">TypeScript</li>
+              <li class="text-sm tracking-wider mb-2">React</li>
+              <li class="text-sm tracking-wider mb-2">Wordpress</li>
+              <li class="text-sm tracking-wider mb-2">Laravel</li>
+              <li class="text-sm tracking-wider mb-2">React Native</li>
+            </ul>
+          </div>
+          <div class="col-span-1">
+            <div class="shadow-md rounded-md">
+              <img class="" src="./assets/image/me.png" title="Anlisha" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container py-40 px-32">
+        <h4
+          class="section-header flex items-center text-3xl font-semibold mb-12"
+        >
+          Where I’ve Worked
+        </h4>
+        <div class="flex flex-col justify-center">
+          <div class="mx-auto">
+            <div
+              class="
+                container
+                flex flex-row
+                items-stretch
+                justify-center
+                w-full
+                max-w-4xl
+                space-x-12
+              "
+              x-data="{tab: 1}"
+            >
+              <div class="flex flex-col justify-start w-1/4 space-y-4">
+                <a
+                  class="px-4 py-2 text-sm tracking-wider"
+                  :class="{'z-20 border-l-2 transform translate-x-2 border-teal-500 font-bold': tab === 1, ' transform -translate-x-2': tab !== 1}"
+                  href="#"
+                  @click.prevent="tab = 1"
+                >
+                  Innovation Developers
+                </a>
+                <a
+                  class="px-4 py-2 text-sm tracking-wider"
+                  :class="{'z-20 border-l-2 transform translate-x-2 border-teal-500 font-bold': tab === 2, ' transform -translate-x-2': tab !== 2}"
+                  href="#"
+                  @click.prevent="tab = 2"
+                  @click.prevent="tab = 2"
+                >
+                  Amnil Technologies
+                </a>
+                <a
+                  class="px-4 py-2 text-sm tracking-wider"
+                  :class="{'z-20 border-l-2 transform translate-x-2 border-teal-500 font-bold': tab === 3, ' transform -translate-x-2': tab !== 3}"
+                  href="#"
+                  @click.prevent="tab = 3"
+                  @click.prevent="tab = 3"
+                >
+                  Grafi Offshore
+                </a>
+              </div>
+              <div class="w-3/4">
+                <div class="space-y-3" x-show="tab === 1">
+                  <h3
+                    class="text-base font-semibold leading-tight"
+                    x-show="tab === 1"
+                    x-transition:enter="transition duration-500 transform ease-in"
+                    x-transition:enter-start="opacity-0"
+                  >
+                    Full Stack Developer
+                    <a
+                      class="text-primary-400"
+                      target="_blank"
+                      href="https://www.idnepal.com"
+                      >@ Innovation Developers</a
+                    >
+                  </h3>
+                  <p
+                    class="text-sm tracking-wider"
+                    x-show="tab === 1"
+                    x-transition:enter="transition delay-100 duration-500 transform ease-in"
+                    x-transition:enter-start="opacity-0"
+                  >
+                    Jan 2020 - Present
+                  </p>
+                  <ul class="list-none">
+                    <li class="text-sm mb-2">
+                      Write modern, performant, maintainable code for a diverse
+                      array of client and internal projects
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="space-y-3" x-show="tab === 2">
+                  <h3
+                    class="text-base font-semibold leading-tight"
+                    x-show="tab === 2"
+                    x-transition:enter="transition duration-500 transform ease-in"
+                    x-transition:enter-start="opacity-0"
+                  >
+                    Software Developer
+                    <a
+                      class="text-primary-400"
+                      target="_blank"
+                      href="https://www.idnepal.com"
+                      >@ Amnil Technologies</a
+                    >
+                  </h3>
+                  <p
+                    class="text-sm tracking-wider"
+                    x-show="tab === 2"
+                    x-transition:enter="transition delay-100 duration-500 transform ease-in"
+                    x-transition:enter-start="opacity-0"
+                  >
+                    Jan 2017 - Dec 2019
+                  </p>
+                  <ul class="list-none">
+                    <li class="text-sm mb-2">
+                      Write modern, performant, maintainable code for a diverse
+                      array of client and internal projects
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="space-y-3" x-show="tab === 3">
+                  <h3
+                    class="text-base font-semibold leading-tight"
+                    x-show="tab === 3"
+                    x-transition:enter="transition duration-500 transform ease-in"
+                    x-transition:enter-start="opacity-0"
+                  >
+                    Software Developer
+                    <a
+                      class="text-primary-400"
+                      target="_blank"
+                      href="https://www.idnepal.com"
+                      >@ Grafi Offshore</a
+                    >
+                  </h3>
+                  <p
+                    class="text-sm tracking-wider"
+                    x-show="tab === 3"
+                    x-transition:enter="transition delay-100 duration-500 transform ease-in"
+                    x-transition:enter-start="opacity-0"
+                  >
+                    Jan 2017 - Dec 2019
+                  </p>
+                  <ul class="list-none">
+                    <li class="text-sm mb-2"></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container py-40 px-14">
+        <h4
+          class="section-header flex items-center text-3xl font-semibold mb-12"
+        >
+          Some Things I’ve Built
+        </h4>
+      </section>
+
+      <section class="container py-32 px-14 text-center">
+        <h4 class="text-3xl font-semibold mb-12">Other Noteworthy Projects</h4>
+      </section>
+
+      <section class="container py-32 px-48 text-center">
+        <h6 class="text-lg font-normal mb-6 text-primary-400 tracking-wider">
+          What’s Next?
+        </h6>
+        <h3 class="text-6xl font-semibold mb-6">Get In Touch</h3>
+        <p class="text-lg max-w-2xl mb-12">
+          Although I’m not currently looking for any new opportunities, my inbox
+          is <br />
+          always open. Whether you have a question or just want to say hi, I’ll
+          try my <br />
+          best to get back to you!
+        </p>
+        <a
+          class="
+            text-lg
+            font-normal
+            mb-6
+            text-primary-400
+            tracking-wider
+            border border-1 border-solid
+            rounded
+            py-3
+            px-5
+          "
+          href="mailto:anlishamaharjan@gmail.com"
+          rel="noopener noreferrer"
+          target="_blank"
+          >Say Hello</a
+        >
+      </section>
+    </main>
+
+    <footer
+      class="flex flex-col items-center justify-center text-center py-6 px-5"
+    >
+      <p class="text-sm tracking-wider">
+        <a
+          href="https://github.com/anlisha-maharjan"
+          rel="noopener noreferrer"
+          target="_blank"
+          >Built by Anlisha Maharjan</a
+        >
+      </p>
+    </footer>
+    <!-- jQuery 3.6.0 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js"></script>
+    <script src="./tailwind.config.js"></script>
+  </body>
+</html>

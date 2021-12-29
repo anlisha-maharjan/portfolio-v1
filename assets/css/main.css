@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* ===== Start Header =====*/
+.main-header__nav ul > li > a.active {
+  color: #64ffda;
+}
+
+/* ===== End Header =====*/
+.section-header::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 27rem;
+  height: 1px;
+  margin-left: 2rem;
+  background-color: rgba(136, 146, 176, 0.3);
+}
+
+/*# sourceMappingURL=main.css.map */

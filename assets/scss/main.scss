@@ -1,0 +1,24 @@
+@import "./tailwind";
+@import "./variable";
+
+/* ===== Start Header =====*/
+.main-header {
+  &__nav {
+    ul > li > a {
+      &.active {
+        color: $primaryColor;
+      }
+    }
+  }
+}
+/* ===== End Header =====*/
+
+.section-header::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 27rem;
+  height: 1px;
+  margin-left: 2rem;
+  background-color: rgba($color: $textColor, $alpha: 0.3);
+}
