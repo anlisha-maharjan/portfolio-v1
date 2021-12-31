@@ -1,6 +1,6 @@
 tailwind.config = {
   theme: {
-    fontFamily: { body: ['"Roboto"'] },
+    fontFamily: { body: ['"Dosis"'] },
     extend: {
       width: {
         sm: "640px",

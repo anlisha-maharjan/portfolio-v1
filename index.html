@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -19,16 +19,19 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body class="bg-body text-default font-body text-base leading-normal">
-    <header class="main-header w-full fixed px-12 z-auto top-0 left-0">
+    <header
+      class="w-full h-20 fixed px-12 z-50 top-0 left-0 backdrop-blur"
+      id="main-header"
+    >
       <div class="flex items-center justify-between">
         <a href="">
           <img
-            class="w-full h-36"
+            class="w-full h-20"
             src="./assets/image/logo.png"
             title="Anlisha"
           />
         </a>
-        <nav class="main-header__nav">
+        <nav>
           <ul class="flex items-center justify-around list-none">
             <li class="my-0 mx-4">
               <a
@@ -84,7 +87,61 @@
         "
       >
         <li class="p-4">
-          <a href="#" target="_blank" rel="noopener noreferrer"></a>
+          <a
+            href="https://github.com/anlisha-maharjan"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><svg height="24" viewBox="0 0 24 24" width="24">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                fill="none"
+                stroke="#fff"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              /></svg
+          ></a>
+        </li>
+        <li class="p-4 hover:text-primary-500">
+          <a
+            href="https://www.instagram.com/anlishamaharjan"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><svg
+              fill="none"
+              height="24"
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <rect height="20" rx="5" ry="5" width="20" x="2" y="2" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" x2="17.5" y1="6.5" y2="6.5" /></svg
+          ></a>
+        </li>
+        <li class="p-4 hover:text-primary-500">
+          <a
+            href="https://np.linkedin.com/in/anlisha-maharjan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              class="fill-white"
+              height="30px"
+              viewBox="0 0 24 24"
+              width="30px"
+            >
+              <g>
+                <path
+                  d="M8,19H5V9h3V19z M19,19h-3v-5.342c0-1.392-0.496-2.085-1.479-2.085c-0.779,0-1.273,0.388-1.521,1.165C13,14,13,19,13,19h-3   c0,0,0.04-9,0-10h2.368l0.183,2h0.062c0.615-1,1.598-1.678,2.946-1.678c1.025,0,1.854,0.285,2.487,1.001   C18.683,11.04,19,12.002,19,13.353V19z"
+                />
+              </g>
+              <g><ellipse cx="6.5" cy="6.5" rx="1.55" ry="1.5" /></g>
+            </svg>
+          </a>
         </li>
       </ul>
     </div>
@@ -96,6 +153,7 @@
         class="
           flex flex-col
           items-center
+          relative
           after:content-['']
           after:block
           after:w-px
@@ -105,6 +163,7 @@
         "
       >
         <a
+          style="writing-mode: vertical-lr"
           class="text-sm p-4 tracking-widest"
           href="mailto:anlishamaharjan@gmail.com"
           >anlishamaharjan@gmail.com</a
@@ -162,17 +221,12 @@
           <div class="col-span-2">
             <p class="text-lg max-w-2xl mb-6">
               Hello! My name is Anlisha and I enjoy creating things that live on
-              the internet. My interest in web development started back in 2016
-              when I decided to try editing custom Tumblr themes — turns out
-              hacking together a custom reblog button taught me a lot about HTML
-              & CSS!
+              the internet. My interest in web development started back in 2016.
             </p>
             <p class="text-lg max-w-2xl mb-6">
-              Fast-forward to today, and I’ve had the privilege of working at an
-              advertising agency, a start-up, a huge corporation, and a
-              student-led design studio. My main focus these days is building
-              accessible, inclusive products and digital experiences at
-              Innovation Developers for a variety of clients.
+              My main focus these days is building accessible, inclusive
+              products and digital experiences at Innovation Developers for a
+              variety of clients.
             </p>
             <p class="text-lg max-w-2xl mb-6">
               Here are a few technologies I’ve been working with recently:
@@ -718,12 +772,108 @@
         >
           Some Things I’ve Built
         </h4>
+        <ul class="list-none">
+          <li class="grid grid-cols-12 gap-2 items-center mb-20">
+            <div
+              class="col-content-right relative text-left z-20"
+              style="grid-area: 1 / 1 / -1 / 7"
+            >
+              <p class="text-xs mb-2 text-primary-400 tracking-widest">
+                Featured Project
+              </p>
+              <h4 class="text-2xl font-semibold mb-6">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:text-primary-500"
+                  >Lorem Ipsum</a
+                >
+              </h4>
+              <div class="shadow-md rounded-md bg-navy p-8 z-10 mb-4">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  dummy text.
+                </p>
+              </div>
+              <ul class="flex justify-start grow flex-wrap list-none">
+                <li class="text-xs mr-6 leading-6">HTML</li>
+                <li class="text-xs mr-6 leading-6">CSS</li>
+                <li class="text-xs leading-6">PHP</li>
+              </ul>
+            </div>
+            <div
+              class="col-img-left relative shadow-md rounded-md"
+              style="grid-area: 1 / 6 / -1 / -1"
+            >
+              <figure class="w-full h-[16vw]">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <img
+                    class="rounded-md w-full h-full object-cover"
+                    src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
+                    title=""
+                  />
+                </a>
+              </figure>
+            </div>
+          </li>
+
+          <li class="grid grid-cols-12 gap-2 items-center">
+            <div
+              class="relative shadow-md rounded-md"
+              style="grid-area: 1 / 6 / -1 / -1; grid-column: 1 / 8"
+            >
+              <figure class="w-full h-[16vw]">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <img
+                    class="rounded-md w-full h-full object-cover"
+                    src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
+                    title=""
+                  />
+                </a>
+              </figure>
+            </div>
+            <div
+              class="relative text-right z-20"
+              style="grid-area: 1 / 1 / -1 / 7; grid-column: 7 / -1"
+            >
+              <p class="text-xs mb-2 text-primary-400 tracking-widest">
+                Featured Project
+              </p>
+              <h4 class="text-2xl font-semibold mb-6">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:text-primary-500"
+                  >Lorem Ipsum</a
+                >
+              </h4>
+              <div class="shadow-md rounded-md bg-navy p-8 z-10 mb-4">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  dummy text.
+                </p>
+              </div>
+              <ul class="flex justify-end grow flex-wrap list-none">
+                <li class="text-xs mr-6 leading-6">HTML</li>
+                <li class="text-xs mr-6 leading-6">CSS</li>
+                <li class="text-xs leading-6">PHP</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
       </section>
       <!-- End Featured Project -->
 
       <!-- Start Project -->
       <section class="container py-28 px-3 text-center">
-        <h4 class="text-3xl font-semibold mb-14">Other Noteworthy Projects</h4>
+        <h4 class="text-3xl font-semibold mb-2">Other Noteworthy Projects</h4>
+        <a class="text-lg mb-16 text-primary-400 cursor-pointer tracking-wider">
+          view the archive
+        </a>
         <ul class="mt-10 grid grid-cols-3 gap-6 list-none">
           <li
             class="
@@ -935,6 +1085,7 @@
               </ul>
             </a>
           </li>
+          
         </ul>
       </section>
       <!-- End Project -->
@@ -987,49 +1138,70 @@
       </p>
     </footer>
     <!-- End Footer -->
+
+    <!-- Start Loader -->
+    <div class="loader"></div>
+    <!-- End Loader -->
     <!-- jQuery 3.6.0 -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js"></script>
     <script src="./tailwind.config.js"></script>
-    <script type="">
+    <script>
+      $(window).on("load", function () {
+        $(".loader").hide();
+      });
       jQuery(document).ready(function ($) {
-        $('a[href*="#"]').click(function (event) {
-          if (
-            location.pathname.replace(/^\//, "") ==
-              this.pathname.replace(/^\//, "") &&
-            location.hostname == this.hostname
-          ) {
-            // Figure out element to scroll to
-            var target = $(this.hash);
-            target = target.length
-              ? target
-              : $("[name=" + this.hash.slice(1) + "]");
-            // Does a scroll target exist?
-            if (target.length) {
-              // Only prevent default if animation is actually gonna happen
-              event.preventDefault();
-              $("html, body").animate(
-                {
-                  scrollTop: target.offset().top,
-                },
-                5,
-                function () {
-                  // Callback after animation
-                  // Must change focus!
-                  var $target = $(target);
-                  $target.focus();
-                  if ($target.is(":focus")) {
-                    // Checking if the target was focused
-                    return false;
-                  } else {
-                    $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
-                    $target.focus(); // Set focus again
-                  }
-                }
-              );
+        (function () {
+          var doc = document.documentElement;
+          var w = window;
+
+          var prevScroll = w.scrollY || doc.scrollTop;
+          var curScroll;
+          var direction = 0;
+          var prevDirection = 0;
+
+          var header = document.getElementById("main-header");
+
+          var checkScroll = function () {
+            /*
+             ** Find the direction of scroll
+             ** 0 - initial, 1 - up, 2 - down
+             */
+
+            curScroll = w.scrollY || doc.scrollTop;
+            if (curScroll === 0) {
+              header.classList.remove("shadow-md");
+            } else if (curScroll > prevScroll) {
+              //scrolled up
+              direction = 2;
+            } else if (curScroll < prevScroll) {
+              //scrolled down
+              direction = 1;
             }
-          }
-        });
+
+            if (direction !== prevDirection) {
+              toggleHeader(direction, curScroll);
+            }
+
+            prevScroll = curScroll;
+          };
+
+          var toggleHeader = function (direction, curScroll) {
+            if (direction === 2 && curScroll > 80) {
+              //replace 80 with the height of your header in px
+
+              header.classList.add("hide");
+              header.classList.remove("shadow-md");
+              prevDirection = direction;
+            } else if (direction === 1) {
+              header.classList.remove("hide");
+              header.classList.add("shadow-md");
+              prevDirection = direction;
+            }
+          };
+
+          window.addEventListener("scroll", checkScroll);
+        })();
       });
     </script>
   </body>
