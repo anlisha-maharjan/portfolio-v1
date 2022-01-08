@@ -75,31 +75,33 @@
               d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
           </svg>
         </button>
-        <nav class="w-96 h-full fixed bg-gray-50">
-          <ul class="flex flex-col items-center justify-around list-none">
-            <li class="my-0 mx-4">
-              <a href="#about" class="no-underline text-sm hover:text-primary-400">About</a>
-            </li>
-            <li class="my-0 mx-4">
-              <a href="#job" class="no-underline text-sm hover:text-primary-400">Experience</a>
-            </li>
-            <li class="my-0 mx-4">
-              <a href="#project" class="no-underline text-sm hover:text-primary-400">Work</a>
-            </li>
-            <li class="my-0 mx-4">
-              <a href="#contact" class="no-underline text-sm hover:text-primary-400">Contact</a>
-            </li>
-            <li class="my-0 mx-4">
-              <a href="#" class="no-underline text-sm hover:text-primary-400">Resume</a>
-            </li>
-          </ul>
-        </nav>
+        <aside class="flex items-center justify-center fixed top-0 bottom-0 right-0 w-[70%] h-[100vh] bg-gray-50 shadow-md z-10" >
+          <nav class="">
+            <ul class="flex flex-col items-center justify-between text-center list-none">
+              <li class="">
+                <a href="#about" class="no-underline text-sm hover:text-primary-400">About</a>
+              </li>
+              <li class="">
+                <a href="#job" class="no-underline text-sm hover:text-primary-400">Experience</a>
+              </li>
+              <li class="">
+                <a href="#project" class="no-underline text-sm hover:text-primary-400">Work</a>
+              </li>
+              <li class="">
+                <a href="#contact" class="no-underline text-sm hover:text-primary-400">Contact</a>
+              </li>
+              <li class="">
+                <a href="#" class="no-underline text-sm hover:text-primary-400">Resume</a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
       </div>
     </div>
   </header>
 
   <!-- Start Social -->
-  <div class="w-10 fixed bottom-0 left-24 right-auto z-10">
+  <div class="hidden lg:block w-10 fixed bottom-0 left-24 lg:left-12 right-auto z-10">
     <ul
       class="flex flex-col items-center list-none m-0 p-0 after:content-[''] after:block after:w-px after:h-36 after:m-auto after:bg-primary-400">
       <li class="p-4">
@@ -135,7 +137,7 @@
   <!-- End Social -->
 
   <!-- Start Email -->
-  <div class="w-10 fixed bottom-0 left-auto right-24 z-10">
+  <div class="hidden lg:block w-10 fixed bottom-0 left-auto right-24 lg:right-12 z-10">
     <div
       class="flex flex-col items-center relative after:content-[''] after:block after:w-px after:h-36 after:m-auto after:bg-primary-400">
       <a style="writing-mode: vertical-lr" class="text-primary-500 text-sm p-4 tracking-widest"
