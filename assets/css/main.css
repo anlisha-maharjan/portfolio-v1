@@ -25,18 +25,20 @@
   z-index: 100;
 }
 
-::-webkit-scrollbar {
-  width: 6px;
-}
+@media (min-width: 1280px) {
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
 
-::-webkit-scrollbar-track {
-  background-color: #fdffff;
-  border-radius: 100px;
-}
+  ::-webkit-scrollbar-track {
+    background-color: #fdffff;
+    border-radius: 100px;
+  }
 
-::-webkit-scrollbar-thumb {
-  background-color: #89503F;
-  border-radius: 100px;
+  ::-webkit-scrollbar-thumb {
+    background-color: #89503F;
+    border-radius: 100px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
