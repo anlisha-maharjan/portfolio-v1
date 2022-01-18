@@ -274,7 +274,8 @@
               href="https://github.com/anlisha-maharjan"
               target="_blank"
               rel="noopener noreferrer"
-              ><svg height="24" viewBox="0 0 24 24" width="24">
+            >
+              <svg height="24" viewBox="0 0 24 24" width="24">
                 <path
                   d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
                   fill="none"
@@ -1373,16 +1374,27 @@
     <!-- End Footer -->
 
     <!-- Start Loader -->
-    <div class="loader"></div>
+    <div class="loader"><div class="clock-loader"></div></div>
+    <!-- <div class="loader">
+      <div class="pencil">
+        <div class="pencil__ball-point"></div>
+        <div class="pencil__cap"></div>
+        <div class="pencil__cap-base"></div>
+        <div class="pencil__middle"></div>
+        <div class="pencil__eraser"></div>
+      </div>
+      <div class="line"></div>
+      <h2 class="info text-xl tracking-widest">Please Wait...</h2>
+    </div> -->
     <!-- End Loader -->
     <!-- jQuery 3.6.0 -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js"></script>
     <script src="./tailwind.config.js"></script>
     <script>
-      $(window).on("load", function () {
+      setTimeout(function () {
         $(".loader").hide();
-      });
+      }, 1000);
       jQuery(document).ready(function ($) {
         (function () {
           var doc = document.documentElement;
