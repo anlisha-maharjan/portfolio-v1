@@ -1,4 +1,5 @@
-tailwind.config = {
+module.exports = {
+  content: ["./index.html"],
   theme: {
     fontFamily: { body: ['"Dosis"'] },
     extend: {
@@ -33,4 +34,5 @@ tailwind.config = {
       },
     },
   },
+  plugins: [],
 };

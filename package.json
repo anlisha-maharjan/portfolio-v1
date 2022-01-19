@@ -1,0 +1,30 @@
+{
+  "name": "portfolio-v1",
+  "version": "1.0.0",
+  "description": "Thank you for checking out this repository of my portfolio website. This isn't just my portfolio, but also a personal project in and of itself.",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tailwind": "tailwindcss -i ./assets/scss/tailwind.css -o ./assets/css/tailwind.css --watch",
+    "sass": "sass --watch ./assets/scss/main.scss:./assets/css/main.css",
+    "dev": "concurrently \"npm run tailwind\" \"npm run sass\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anlisha-maharjan/portfolio-v1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anlisha-maharjan/portfolio-v1/issues"
+  },
+  "homepage": "https://github.com/anlisha-maharjan/portfolio-v1#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.15"
+  },
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
