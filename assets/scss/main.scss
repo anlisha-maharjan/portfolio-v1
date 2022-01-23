@@ -1,5 +1,11 @@
 @import "./variable";
 
+body {
+  background-image: url('../image/bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 #main-header.hide {
   top: -80px;
   transition: 400ms ease;
@@ -39,16 +45,19 @@
   width: 120px;
   height: 60px;
   position: relative;
+
   div,
   span {
     position: absolute;
   }
+
   div {
     top: 0;
     left: 50%;
     width: 60px;
     height: 60px;
     animation: rotate 6.9s linear infinite;
+
     span {
       left: -8px;
       top: 50%;
@@ -61,6 +70,7 @@
       border-radius: 50%;
       transform: rotate(90deg);
       animation: move 6.9s linear infinite;
+
       &:before,
       &:after {
         content: "";
@@ -75,21 +85,27 @@
         margin: -7px 0 0 -7px;
         box-shadow: inherit;
       }
+
       &:before {
         animation: drop1 0.8s linear infinite;
       }
+
       &:after {
         animation: drop2 0.8s linear infinite 0.4s;
       }
     }
+
     &:nth-child(2) {
       animation-delay: -2.3s;
+
       span {
         animation-delay: -2.3s;
       }
     }
+
     &:nth-child(3) {
       animation-delay: -4.6s;
+
       span {
         animation-delay: -4.6s;
       }
@@ -100,6 +116,7 @@
 .infinityChrome {
   width: 128px;
   height: 60px;
+
   div {
     position: absolute;
     width: 16px;
@@ -111,9 +128,9 @@
     -webkit-filter: url(#goo);
     filter: url(#goo);
     transform: scaleX(-1);
-    offset-path: path(
-      "M64.3636364,29.4064278 C77.8909091,43.5203348 84.4363636,56 98.5454545,56 C112.654545,56 124,44.4117395 124,30.0006975 C124,15.5896556 112.654545,3.85282763 98.5454545,4.00139508 C84.4363636,4.14996252 79.2,14.6982509 66.4,29.4064278 C53.4545455,42.4803627 43.5636364,56 29.4545455,56 C15.3454545,56 4,44.4117395 4,30.0006975 C4,15.5896556 15.3454545,4.00139508 29.4545455,4.00139508 C43.5636364,4.00139508 53.1636364,17.8181672 64.3636364,29.4064278 Z"
-    );
+    offset-path: path("M64.3636364,29.4064278 C77.8909091,43.5203348 84.4363636,56 98.5454545,56 C112.654545,56 124,44.4117395 124,30.0006975 C124,15.5896556 112.654545,3.85282763 98.5454545,4.00139508 C84.4363636,4.14996252 79.2,14.6982509 66.4,29.4064278 C53.4545455,42.4803627 43.5636364,56 29.4545455,56 C15.3454545,56 4,44.4117395 4,30.0006975 C4,15.5896556 15.3454545,4.00139508 29.4545455,4.00139508 C43.5636364,4.00139508 53.1636364,17.8181672 64.3636364,29.4064278 Z"
+      );
+
     &:before,
     &:after {
       content: "";
@@ -128,15 +145,19 @@
       margin: -7px 0 0 -7px;
       box-shadow: inherit;
     }
+
     &:before {
       animation: drop1 0.8s linear infinite;
     }
+
     &:after {
       animation: drop2 0.8s linear infinite 0.4s;
     }
+
     &:nth-child(2) {
       animation-delay: -2.3s;
     }
+
     &:nth-child(3) {
       animation-delay: -4.6s;
     }
@@ -147,12 +168,15 @@
   0% {
     offset-distance: 0%;
   }
+
   25% {
     background: #5628ee;
   }
+
   75% {
     background: #23c4f8;
   }
+
   100% {
     offset-distance: 100%;
   }
@@ -163,6 +187,7 @@
     transform: rotate(360deg);
     margin-left: 0;
   }
+
   50.0001%,
   100% {
     margin-left: -60px;
@@ -170,16 +195,20 @@
 }
 
 @keyframes move {
+
   0%,
   50% {
     left: -8px;
   }
+
   25% {
     background: #5628ee;
   }
+
   75% {
     background: #23c4f8;
   }
+
   50.0001%,
   100% {
     left: auto;
@@ -197,6 +226,7 @@
   0% {
     transform: translate(0, 0) scale(0.9);
   }
+
   100% {
     transform: translate(32px, -8px) scale(0);
   }

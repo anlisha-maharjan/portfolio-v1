@@ -1,3 +1,9 @@
+body {
+  background-image: url("../image/bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 #main-header.hide {
   top: -80px;
   transition: 400ms ease;
@@ -9,7 +15,7 @@
   }
 
   ::-webkit-scrollbar-track {
-    background-color: #fdffff;
+    background-color: #ECF0F3;
     border-radius: 100px;
   }
 
@@ -24,7 +30,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #fdffff;
+  background-color: #ECF0F3;
   display: flex;
   flex-direction: column;
   align-items: center;

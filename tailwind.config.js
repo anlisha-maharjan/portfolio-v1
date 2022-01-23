@@ -27,7 +27,7 @@ module.exports = {
         basicgrad: "linear-gradient(135deg, #f26440 0%,#725690 100%)",
       },
       backgroundColor: {
-        body: "#fdffff",
+        body: "#ECF0F3",
       },
       textColor: {
         default: "#004E70",
