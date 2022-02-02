@@ -32,6 +32,15 @@ module.exports = {
       textColor: {
         default: "#004E70",
       },
+      animation: {
+        fadeInTop: "fadeInTop 1s ease-in forwards",
+      },
+      keyframes: {
+        fadeInTop: {
+          "0%": { opacity: 0, transform: "translateY(50px)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
+        },
+      },
     },
   },
   plugins: [],
