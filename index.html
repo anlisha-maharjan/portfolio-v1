@@ -30,7 +30,8 @@
       class="w-full h-16 lg:h-20 fixed px-6 py-4 lg:px-12 z-50 top-0 left-0 backdrop-blur"
       id="main-header"
     >
-      <div class="flex items-center justify-between">
+      <div class="container flex items-center justify-between">
+        <!-- Mobile Logo -->
         <a href="" class="block lg:hidden">
           <svg
             version="1.1"
@@ -103,6 +104,7 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
             </g>
           </svg>
         </a>
+        <!-- Desktop Logo -->
         <a href="" class="hidden lg:block">
           <svg
             width="100%"
@@ -187,6 +189,7 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
             </li> -->
           </ul>
         </nav>
+        <!-- Hamburger Menu -->
         <div class="block lg:hidden">
           <button
             type="button"
@@ -194,6 +197,7 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
             class="relative z-20"
             :class="{ 'transition transform-180': isMobileMenuOpen }"
           >
+            <!-- Close Svg -->
             <svg
               viewBox="0 0 32 32"
               height="32"
@@ -225,6 +229,7 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
                 />
               </g>
             </svg>
+            <!-- Hamburger Svg -->
             <svg
               height="24"
               viewBox="0 0 32 32"
@@ -289,7 +294,727 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
               >
             </li> -->
           </ul>
-          <div class="flex gap-7 mb-8">
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Main -->
+    <main>
+      <!-- Start -->
+      <section class="h-[100vh] flex flex-col items-start justify-center">
+        <!-- <div id="particles-js"></div> -->
+        <div class="container">
+          <h2
+            class="text-4xl md:text-6xl lg:text-7xl font-semibold mb-4 md:mb-6 lg:mb-8 !leading-normal !animate-[fadeInTop_1s_ease-in-out_200ms_forwards]"
+          >
+            Hello!
+            <span
+              class="text-primary-400 block !animate-[fadeInTop_1s_ease-in-out_400ms_forwards]"
+              >I'm Anlisha Maharjan,</span
+            >
+            <span
+              class="block !animate-[fadeInTop_1s_ease-in-out_600ms_forwards]"
+              >Full-Stack Developer</span
+            >
+          </h2>
+          <p
+            class="text-lg md:text-xl max-w-xl !animate-[fadeInTop_1s_ease-in-out_800ms_forwards]"
+          >
+            I'm a software developer specializing in both front-end and back-end
+            web development, devoted to crafting beautiful web experiences
+            focused on simplicity and purpose.
+          </p>
+          <ul
+            class="hidden md:flex flex-wrap mt-12 lg:mt-14 list-none gap-6 lg:gap-8 !animate-[fadeInTop_1s_ease-in-out_900ms_forwards]"
+          >
+            <li
+              class="transition-all duration-300 ease-in-out hover:scale-[1.15]"
+            >
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                target="_blank"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                  alt="javascript"
+                  width="40"
+                  height="40"
+                />
+              </a>
+            </li>
+            <li
+              class="transition-all duration-300 ease-in-out hover:scale-[1.15]"
+            >
+              <a href="https://www.typescriptlang.org/" target="_blank">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+                  alt="typescript"
+                  width="40"
+                  height="40"
+                />
+              </a>
+            </li>
+            <li
+              class="transition-all duration-300 ease-in-out hover:scale-[1.15]"
+            >
+              <a href="https://reactjs.org/" target="_blank">
+                <img
+                  src="https://reactnative.dev/img/header_logo.svg"
+                  alt="react"
+                  width="40"
+                  height="40"
+                />
+              </a>
+            </li>
+            <li
+              class="transition-all duration-300 ease-in-out hover:scale-[1.15]"
+            >
+              <a href="https://angular.io" target="_blank">
+                <img
+                  src="https://angular.io/assets/images/logos/angular/angular.svg"
+                  alt="angular"
+                  width="40"
+                  height="40"
+                />
+              </a>
+            </li>
+            <li
+              class="transition-all duration-300 ease-in-out hover:scale-[1.15]"
+            >
+              <a href="https://www.cypress.io" target="_blank">
+                <img
+                  src="https://raw.githubusercontent.com/simple-icons/simple-icons/6e46ec1fc23b60c8fd0d2f2ff46db82e16dbd75f/icons/cypress.svg"
+                  alt="cypress"
+                  width="40"
+                  height="40"
+                />
+              </a>
+            </li>
+            <li
+              class="transition-all duration-300 ease-in-out hover:scale-[1.15]"
+            >
+              <a href="https://www.mysql.com/" target="_blank">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+                  alt="mysql"
+                  width="40"
+                  height="40"
+                />
+              </a>
+            </li>
+            <li
+              class="transition-all duration-300 ease-in-out hover:scale-[1.15]"
+            >
+              <a href="https://www.php.net" target="_blank">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"
+                  alt="php"
+                  width="40"
+                  height="40"
+                />
+              </a>
+            </li>
+            <li
+              class="transition-all duration-300 ease-in-out hover:scale-[1.15]"
+            >
+              <a href="https://www.docker.com/" target="_blank">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"
+                  alt="docker"
+                  width="40"
+                  height="40"
+                />
+              </a>
+            </li>
+            <li
+              class="transition-all duration-300 ease-in-out hover:scale-[1.15]"
+            >
+              <a href="https://dev.w3.org/html5/html-author/" target="_blank">
+                <img
+                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
+                  alt="html5"
+                  width="40"
+                  height="40"
+                />
+              </a>
+            </li>
+            <li
+              class="transition-all duration-300 ease-in-out hover:scale-[1.15]"
+            >
+              <a href="https://sass-lang.com" target="_blank">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
+                  alt="sass"
+                  width="40"
+                  height="40"
+                />
+              </a>
+            </li>
+            <li
+              class="transition-all duration-300 ease-in-out hover:scale-[1.15]"
+            >
+              <a href="https://git-scm.com/doc" target="_blank">
+                <img
+                  src="https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667"
+                  alt="git"
+                  width="40"
+                  height="40"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- End -->
+
+      <!-- Start About Me -->
+      <section id="about" class="py-12 lg:py-24 js-show-on-scroll">
+        <div class="container">
+          <div class="block lg:grid grid-cols-3 gap-12 items-center">
+            <div class="col-span-2 max-w-2xl">
+              <h4
+                class="flex items-center relative text-2xl lg:text-3xl font-semibold mb-8 md:mb-12"
+              >
+                <span class="block bg-body pr-4">About Me</span>
+                <hr class="absolute w-full h-px border-primary-400 -z-10" />
+              </h4>
+              <p class="text-lg md:text-xl mb-4 md:mb-6">
+                <!-- Intro -->
+              </p>
+              <p class="text-lg md:text-xl mb-4 md:mb-6">
+                In 2018 I graduated from St. Xavier's College with a focus on
+                software development and a mantra to always be curious. I can
+                plan, build, launch, and maintain a web application myself—did I
+                mention that I build mobile apps too? I have worked on handful
+                of cross-platform iOS and Android apps with React Native and
+                Ionic.
+              </p>
+              <p class="text-lg md:text-xl mb-4 md:mb-6">
+                Skills can be taught, personality is inherent. I prefer to keep
+                learning, continue challenging myself and do interesting things
+                that matter. When I'm not coding, you'll find me trekking some
+                stunning landscapes.
+              </p>
+            </div>
+            <div
+              class="col-span-1 mt-8 mx-auto w-[65%] md:w-[50%] lg:mt-0 lg:w-full"
+            >
+              <div
+                class="block relative shadow-md rounded-md w-full after:content-[''] after:absolute after:w-full after:h-full after:border-solid after:border-2 after:border-primary-400 after:top-4 after:left-4 after:-z-10 after:rounded-md"
+              >
+                <img
+                  class="relative rounded-md w-full"
+                  src="https://images.unsplash.com/photo-1610276198568-eb6d0ff53e48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                  title="Anlisha"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Me -->
+
+      <!-- Start Experience -->
+      <section id="job" class="py-12 lg:py-24 js-show-on-scroll">
+        <div class="container">
+          <h4
+            class="w-full lg:w-5/6 flex items-center relative text-2xl lg:text-3xl font-semibold mb-8 md:mb-12"
+          >
+            <span class="block bg-body pr-4"> Where I’ve Worked</span>
+            <hr class="absolute w-full h-px border-primary-400 -z-10" />
+          </h4>
+          <div class="flex flex-row md:flex-col md:justify-center">
+            <div class="w-full md:mx-auto">
+              <div
+                class="w-full flex flex-col md:flex-row md:max-w-4xl space-y-8 md:space-y-0"
+                x-data="{tab: 1}"
+              >
+                <div
+                  class="w-full md:flex flex-col md:w-1/4 md:justify-start space-y-0 space-x-4 md:space-y-4 md:space-x-0 whitespace-nowrap md:whitespace-normal overflow-auto"
+                >
+                  <a
+                    class="inline-block px-6 py-2 text-base md:text-lg tracking-wider whitespace-nowrap md:whitespace-normal"
+                    :class="{'z-20 border-b-2 border-l-0 md:border-l-2 md:border-b-0 border-primary-400 font-bold': tab === 1, '': tab !== 1}"
+                    href="#"
+                    @click.prevent="tab = 1"
+                  >
+                    <span class="hidden md:block"
+                      >Innovation Developers Nepal</span
+                    >
+                    <span class="block md:hidden">ID Nepal</span>
+                  </a>
+                  <a
+                    class="inline-block px-6 py-2 text-base md:text-lg tracking-wider whitespace-nowrap md:whitespace-normal"
+                    :class="{'z-20 border-b-2 border-l-0 md:border-l-2 md:border-b-0 border-primary-400 font-bold': tab === 2, '': tab !== 2}"
+                    href="#"
+                    @click.prevent="tab = 2"
+                    @click.prevent="tab = 2"
+                  >
+                    <span class="hidden md:block">Amnil Technologies</span>
+                    <span class="block md:hidden">Amnil</span>
+                  </a>
+                  <a
+                    class="inline-block px-6 py-2 text-base md:text-lg tracking-wider whitespace-nowrap md:whitespace-normal"
+                    :class="{'z-20 border-b-2 border-l-0 md:border-l-2 md:border-b-0 border-primary-400 font-bold': tab === 3, '': tab !== 3}"
+                    href="#"
+                    @click.prevent="tab = 3"
+                    @click.prevent="tab = 3"
+                  >
+                    <span class="hidden md:block"
+                      >Improvement Company Nepal</span
+                    >
+                    <span class="block md:hidden">ICN</span>
+                  </a>
+                  <a
+                    class="inline-block px-6 py-2 text-base md:text-lg tracking-wider whitespace-nowrap md:whitespace-normal"
+                    :class="{'z-20 border-b-2 border-l-0 md:border-l-2 md:border-b-0 border-primary-400 font-bold': tab === 4, '': tab !== 4}"
+                    href="#"
+                    @click.prevent="tab = 4"
+                    @click.prevent="tab = 4"
+                  >
+                    <span class="hidden md:block">Grafi Offshore</span>
+                    <span class="block md:hidden">Grafi</span>
+                  </a>
+                </div>
+                <div class="w-full md:w-3/4">
+                  <div class="space-y-3" x-show="tab === 1">
+                    <h3
+                      class="text-lg md:text-xl font-semibold leading-tight"
+                      x-show="tab === 1"
+                    >
+                      Full Stack Developer
+                      <a
+                        class="text-primary-400"
+                        target="_blank"
+                        href="https://www.idnepal.com"
+                        >@ Innovation Developers Nepal</a
+                      >
+                    </h3>
+                    <p class="md:text-lg tracking-wider" x-show="tab === 1">
+                      Jan 2019 - Present
+                    </p>
+                    <ul class="list-none">
+                      <li
+                        class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
+                      >
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.Lorem Ipsum is simply dummy text of
+                        the printing and typesetting industry.
+                      </li>
+                      <li
+                        class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
+                      >
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.Lorem Ipsum is simply dummy text of
+                        the printing and typesetting industry.
+                      </li>
+                      <li
+                        class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
+                      >
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.Lorem Ipsum is simply dummy text of
+                        the printing and typesetting industry.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="space-y-3" x-show="tab === 2">
+                    <h3
+                      class="text-lg md:text-xl font-semibold leading-tight"
+                      x-show="tab === 2"
+                    >
+                      Software Developer
+                      <a
+                        class="text-primary-400"
+                        target="_blank"
+                        href="https://www.idnepal.com"
+                        >@ Amnil Technologies</a
+                      >
+                    </h3>
+                    <p class="md:text-lg tracking-wider" x-show="tab === 2">
+                      Dec 2016 - Dec 2018
+                    </p>
+                    <ul class="list-none">
+                      <li
+                        class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
+                      >
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.Lorem Ipsum is simply dummy text of
+                        the printing and typesetting industry.
+                      </li>
+                      <li
+                        class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
+                      >
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.Lorem Ipsum is simply dummy text of
+                        the printing and typesetting industry.
+                      </li>
+                      <li
+                        class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
+                      >
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.Lorem Ipsum is simply dummy text of
+                        the printing and typesetting industry.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="space-y-3" x-show="tab === 3">
+                    <h3
+                      class="text-lg md:text-xl font-semibold leading-tight"
+                      x-show="tab === 3"
+                    >
+                      Software Developer
+                      <a
+                        class="text-primary-400"
+                        target="_blank"
+                        href="https://www.idnepal.com"
+                        >@ Improvement Company Nepal</a
+                      >
+                    </h3>
+                    <p class="md:text-lg tracking-wider" x-show="tab === 3">
+                      June 2016 - Dec 2016
+                    </p>
+                    <ul class="list-none">
+                      <li
+                        class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
+                      >
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.Lorem Ipsum is simply dummy text of
+                        the printing and typesetting industry.
+                      </li>
+                      <li
+                        class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
+                      >
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.Lorem Ipsum is simply dummy text of
+                        the printing and typesetting industry.
+                      </li>
+                      <li
+                        class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
+                      >
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.Lorem Ipsum is simply dummy text of
+                        the printing and typesetting industry.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="space-y-3" x-show="tab === 4">
+                    <h3
+                      class="text-lg md:text-xl font-semibold leading-tight"
+                      x-show="tab === 4"
+                    >
+                      Software / Web Development Intern
+                      <a
+                        class="text-primary-400"
+                        target="_blank"
+                        href="https://www.idnepal.com"
+                        >@ Grafi Offshore</a
+                      >
+                    </h3>
+                    <p class="md:text-lg tracking-wider" x-show="tab === 4">
+                      Sep 2015 - June 2016
+                    </p>
+                    <ul class="list-none">
+                      <li
+                        class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
+                      >
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.Lorem Ipsum is simply dummy text of
+                        the printing and typesetting industry.
+                      </li>
+                      <li
+                        class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
+                      >
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.Lorem Ipsum is simply dummy text of
+                        the printing and typesetting industry.
+                      </li>
+                      <li
+                        class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
+                      >
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.Lorem Ipsum is simply dummy text of
+                        the printing and typesetting industry.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Experience -->
+
+      <!-- Start Project -->
+      <section id="project" class="py-12 lg:py-24 text-center">
+        <div class="container">
+          <h4 class="text-2xl md:text-3xl font-semibold mb-2">
+            Selected Works
+          </h4>
+          <ul
+            class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 list-none children:aspect-[4/3]"
+          >
+            <li class="project-1">
+              <div
+                class="w-full h-full flex flex-col items-center justify-center relative p-4 rounded-md shadow-md overflow-hidden transition-all duration-300 z-1 bg-gray-50 xl:hover:scale-110 xl:hover:z-10 group"
+              >
+                <img
+                  src="https://images.pexels.com/photos/10980701/pexels-photo-10980701.jpeg"
+                  class="absolute top-0 left-0 transition-all duration-1000 -z-1 xl:group-hover:scale-110 xl:group-hover:opacity-25"
+                />
+                <h4
+                  class="mb-4 text-2xl font-semibold text-center text-secondary-500 xl:animate-slide-to-top xl:group-hover:animate-slide-from-top"
+                >
+                  Andelskungen
+                </h4>
+                <p
+                  class="hidden xl:block mb-10 text-secondary-500 text-center transition-all opacity-0 duration-800 z-1 xl:group-hover:opacity-100"
+                >
+                  Podcast with Trotting & Sports
+                </p>
+                <div
+                  class="flex gap-1 text-secondary-500 children:px-3 children:leading-6 children:border children:border-solid children:border-secondary-500 children:rounded children:text-sm children:xl:transition-all children:xl:duration-800 children:xl:opacity-0 children:xl:group-hover:opacity-100 children:xl:animate-slide-to-bottom children:xl:group-hover:animate-slide-from-bottom"
+                >
+                  <span class="">React Native</span>
+                  <span class="xl:delay-100">Firebase Messaging</span>
+                  <span class="xl:delay-200">SCSS</span>
+                </div>
+              </div>
+            </li>
+            <li class="project-1">
+              <div
+                class="w-full h-full flex flex-col items-center justify-center relative p-4 rounded-md shadow-md overflow-hidden transition-all duration-300 z-1 bg-gray-50 xl:hover:scale-110 xl:hover:z-10 group"
+              >
+                <img
+                  src="https://images.pexels.com/photos/10980701/pexels-photo-10980701.jpeg"
+                  class="absolute top-0 left-0 transition-all duration-1000 -z-1 xl:group-hover:scale-110 xl:group-hover:opacity-25"
+                />
+                <h4
+                  class="mb-4 text-2xl font-semibold text-center text-secondary-500 xl:animate-slide-to-top xl:group-hover:animate-slide-from-top"
+                >
+                  Hayk
+                </h4>
+                <p
+                  class="hidden xl:block mb-10 text-secondary-500 text-center transition-all opacity-0 duration-800 z-1 xl:group-hover:opacity-100"
+                >
+                  Hayk is developing a service that aims to reduce CO2
+                  emissions, local pollution and traffic in major cities. By
+                  providing easily accessible shared electric cars where people
+                  live and work, we hope to make it easy for people to change
+                  their habits and live a more sustainable life!
+                </p>
+                <div
+                  class="flex gap-1 text-secondary-500 children:px-3 children:leading-6 children:border children:border-solid children:border-secondary-500 children:rounded children:text-sm children:xl:transition-all children:xl:duration-800 children:xl:opacity-0 children:xl:group-hover:opacity-100 children:xl:animate-slide-to-bottom children:xl:group-hover:animate-slide-from-bottom"
+                >
+                  <span class="">Ionic</span>
+                  <span class="xl:delay-100">Angular 6</span>
+                  <span class="xl:delay-200">HTML5</span>
+                  <span class="xl:delay-300">SCSS</span>
+                </div>
+              </div>
+            </li>
+            <li class="project-1">
+              <div
+                class="w-full h-full flex flex-col items-center justify-center relative p-4 rounded-md shadow-md overflow-hidden transition-all duration-300 z-1 bg-gray-50 xl:hover:scale-110 xl:hover:z-10 group"
+              >
+                <img
+                  src="https://images.pexels.com/photos/10980701/pexels-photo-10980701.jpeg"
+                  class="absolute top-0 left-0 transition-all duration-1000 -z-1 xl:group-hover:scale-110 xl:group-hover:opacity-25"
+                />
+                <h4
+                  class="mb-4 text-2xl font-semibold text-center text-secondary-500 xl:animate-slide-to-top xl:group-hover:animate-slide-from-top"
+                >
+                  Nabil Invest App
+                </h4>
+                <p
+                  class="hidden xl:block mb-10 text-secondary-500 text-center transition-all opacity-0 duration-800 z-1 xl:group-hover:opacity-100"
+                >
+                  Nabil Invest App is a convenient way to keep track of your
+                  investments.
+                </p>
+                <div
+                  class="flex gap-1 text-secondary-500 children:px-3 children:leading-6 children:border children:border-solid children:border-secondary-500 children:rounded children:text-sm children:xl:transition-all children:xl:duration-800 children:xl:opacity-0 children:xl:group-hover:opacity-100 children:xl:animate-slide-to-bottom children:xl:group-hover:animate-slide-from-bottom"
+                >
+                  <span class="">Ionic</span>
+                  <span class="xl:delay-100">AngularJS</span>
+                  <span class="xl:delay-200">HTML5</span>
+                  <span class="xl:delay-300">SCSS</span>
+                </div>
+              </div>
+            </li>
+            <li class="project-1">
+              <div
+                class="w-full h-full flex flex-col items-center justify-center relative p-4 rounded-md shadow-md overflow-hidden transition-all duration-300 z-1 bg-gray-50 xl:hover:scale-110 xl:hover:z-10 group"
+              >
+                <img
+                  src="./assets/image/shangrilachauffeurs.png"
+                  class="absolute top-0 left-0 transition-all duration-1000 -z-1 xl:group-hover:scale-110 xl:group-hover:opacity-25"
+                />
+                <h4
+                  class="mb-4 text-2xl font-semibold text-center text-secondary-500 xl:animate-slide-to-top xl:group-hover:animate-slide-from-top"
+                >
+                  Shangri-La Chauffeurs
+                </h4>
+                <p
+                  class="hidden xl:block mb-10 text-secondary-500 text-center transition-all opacity-0 duration-800 z-1 xl:group-hover:opacity-100"
+                >
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <div
+                  class="flex gap-1 text-secondary-500 children:px-3 children:leading-6 children:border children:border-solid children:border-secondary-500 children:rounded children:text-sm children:xl:transition-all children:xl:duration-800 children:xl:opacity-0 children:xl:group-hover:opacity-100 children:xl:animate-slide-to-bottom children:xl:group-hover:animate-slide-from-bottom"
+                >
+                  <span class="">React</span>
+                  <span class="xl:delay-100">Material-UI</span>
+                  <span class="xl:delay-200">Redux</span>
+                  <span class="xl:delay-300">SCSS</span>
+                </div>
+              </div>
+            </li>
+            <li class="project-2">
+              <div
+                class="w-full h-full flex flex-col items-center justify-center relative p-4 rounded-md shadow-md overflow-hidden transition-all duration-300 z-1 bg-gray-50 xl:hover:scale-110 xl:hover:z-10 group"
+              >
+                <img
+                  src="./assets/image/dnpwc.png"
+                  class="absolute top-0 left-0 transition-all duration-1000 -z-1 xl:group-hover:scale-110 xl:group-hover:opacity-25"
+                />
+                <h4
+                  class="mb-4 text-2xl font-semibold text-center text-secondary-500 xl:animate-slide-to-top xl:group-hover:animate-slide-from-top"
+                >
+                  DNPWC
+                </h4>
+                <p
+                  class="hidden xl:block mb-10 text-secondary-500 text-center transition-all opacity-0 duration-800 z-1 xl:group-hover:opacity-100"
+                >
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <div
+                  class="flex gap-1 text-secondary-500 children:px-3 children:leading-6 children:border children:border-solid children:border-secondary-500 children:rounded children:text-sm children:xl:transition-all children:xl:duration-800 children:xl:opacity-0 children:xl:group-hover:opacity-100 children:xl:animate-slide-to-bottom children:xl:group-hover:animate-slide-from-bottom"
+                >
+                  <span class="">Laravel 8</span>
+                  <span class="xl:delay-100">HTML5</span>
+                  <span class="xl:delay-200">SCSS</span>
+                </div>
+              </div>
+            </li>
+            <li class="project-2">
+              <div
+                class="w-full h-full flex flex-col items-center justify-center relative p-4 rounded-md shadow-md overflow-hidden transition-all duration-300 z-1 bg-gray-50 xl:hover:scale-110 xl:hover:z-10 group"
+              >
+                <img
+                  src="./assets/image/sipradi.png"
+                  class="absolute top-0 left-0 transition-all duration-1000 -z-1 xl:group-hover:scale-110 xl:group-hover:opacity-25"
+                />
+                <h4
+                  class="mb-4 text-2xl font-semibold text-center text-secondary-500 xl:animate-slide-to-top xl:group-hover:animate-slide-from-top"
+                >
+                  SIPRADI Companies
+                </h4>
+                <p
+                  class="hidden xl:block mb-10 text-secondary-500 text-center transition-all opacity-0 duration-800 z-1 xl:group-hover:opacity-100"
+                >
+                  SIPRADI is a major player in AUTOMOTIVE and ALLIED business,
+                  one of the largest and most driving brand in Nepal.
+                </p>
+                <div
+                  class="flex gap-1 text-secondary-500 children:px-3 children:leading-6 children:border children:border-solid children:border-secondary-500 children:rounded children:text-sm children:xl:transition-all children:xl:duration-800 children:xl:opacity-0 children:xl:group-hover:opacity-100 children:xl:animate-slide-to-bottom children:xl:group-hover:animate-slide-from-bottom"
+                >
+                  <span class="">CodeIgniter</span>
+                  <span class="xl:delay-100">MySQL</span>
+                  <span class="xl:delay-200">HTML5</span>
+                  <span class="xl:delay-300">CSS3</span>
+                </div>
+              </div>
+            </li>
+            <li class="project-2">
+              <div
+                class="w-full h-full flex flex-col items-center justify-center relative p-4 rounded-md shadow-md overflow-hidden transition-all duration-300 z-1 bg-gray-50 xl:hover:scale-110 xl:hover:z-10 group"
+              >
+                <img
+                  src="./assets/image/nabilinvest.png"
+                  class="absolute top-0 left-0 transition-all duration-1000 -z-1 xl:group-hover:scale-110 xl:group-hover:opacity-25"
+                />
+                <h4
+                  class="mb-4 text-2xl font-semibold text-center text-secondary-500 xl:animate-slide-to-top xl:group-hover:animate-slide-from-top"
+                >
+                  Nabil Investment Banking Limited
+                </h4>
+                <p
+                  class="hidden xl:block mb-10 text-secondary-500 text-center transition-all opacity-0 duration-800 z-1 xl:group-hover:opacity-100"
+                >
+                  Nabil Invest is a licensed DP, registered from SEBON and CDSC
+                  Ltd.
+                </p>
+                <div
+                  class="flex gap-1 text-secondary-500 children:px-3 children:leading-6 children:border children:border-solid children:border-secondary-500 children:rounded children:text-sm children:xl:transition-all children:xl:duration-800 children:xl:opacity-0 children:xl:group-hover:opacity-100 children:xl:animate-slide-to-bottom children:xl:group-hover:animate-slide-from-bottom"
+                >
+                  <span class="">CodeIgniter</span>
+                  <span class="xl:delay-100">MySQL</span>
+                  <span class="xl:delay-200">HTML5</span>
+                  <span class="xl:delay-300">CSS3</span>
+                </div>
+              </div>
+            </li>
+            <li class="project-3">
+              <div
+                class="w-full h-full flex flex-col items-center justify-center relative p-4 rounded-md shadow-md overflow-hidden transition-all duration-300 z-1 bg-gray-50 xl:hover:scale-110 xl:hover:z-10 group"
+              >
+                <img
+                  src="https://images.pexels.com/photos/10980701/pexels-photo-10980701.jpeg"
+                  class="absolute top-0 left-0 transition-all duration-1000 -z-1 xl:group-hover:scale-110 xl:group-hover:opacity-25"
+                />
+                <h4
+                  class="mb-4 text-2xl font-semibold text-center text-secondary-500 xl:animate-slide-to-top xl:group-hover:animate-slide-from-top"
+                >
+                  BSSTN
+                </h4>
+                <p
+                  class="hidden xl:block mb-10 text-secondary-500 text-center transition-all opacity-0 duration-800 z-1 xl:group-hover:opacity-100"
+                >
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <div
+                  class="flex gap-1 text-secondary-500 children:px-3 children:leading-6 children:border children:border-solid children:border-secondary-500 children:rounded children:text-sm children:xl:transition-all children:xl:duration-800 children:xl:opacity-0 children:xl:group-hover:opacity-100 children:xl:animate-slide-to-bottom children:xl:group-hover:animate-slide-from-bottom"
+                >
+                  <span class="">CodeIgniter</span>
+                  <span class="xl:delay-100">MySQL</span>
+                  <span class="xl:delay-200">HTML5</span>
+                  <span class="xl:delay-300">CSS3</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- End Project -->
+
+      <!-- Start Contact -->
+      <section
+        id="contact"
+        class="relative mt-48 py-24 flex flex-col items-center justify-center bg-secondary-500 js-show-on-scroll z-1"
+      >
+        <div
+          class="w-full h-60 absolute -top-24 left-0 bg-secondary-500 -z-1 -skew-y-6"
+        ></div>
+        <div class="container flex flex-col items-center text-white">
+          <h3 class="text-5xl lg:text-6xl font-semibold mb-6">
+            Reach Out To Me !!!
+          </h3>
+
+          <p class="text-lg md:text-xl mb-12 text-center">
+            <!-- Just keeping this simple. -->
+            <!-- Drop Me a Line or Two, my inbox is always open.-->
+            <!-- Whether you have a question or want to work together. -->
+            Go ahead... Don't be shy
+          </p>
+          <div class="flex gap-8">
             <a
               href="https://github.com/anlisha-maharjan"
               target="_blank"
@@ -299,12 +1024,13 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
                 <path
                   d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
                   fill="none"
-                  stroke="#f26440"
+                  stroke="#ffffff"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                /></svg
-            ></a>
+                />
+              </svg>
+            </a>
             <a
               href="https://www.instagram.com/anlishamaharjan"
               target="_blank"
@@ -312,7 +1038,7 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
               ><svg
                 fill="none"
                 height="32"
-                stroke="#f26440"
+                stroke="#ffffff"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
@@ -321,15 +1047,16 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
               >
                 <rect height="20" rx="5" ry="5" width="20" x="2" y="2" />
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                <line x1="17.5" x2="17.5" y1="6.5" y2="6.5" /></svg
-            ></a>
+                <line x1="17.5" x2="17.5" y1="6.5" y2="6.5" />
+              </svg>
+            </a>
             <a
-              href="https://np.linkedin.com/in/anlisha-maharjan"
+              href="https://linkedin.com/in/anlisha-maharjan"
               target="_blank"
               rel="noopener noreferrer"
             >
               <svg
-                class="fill-primary-500"
+                class="fill-white"
                 height="34"
                 viewBox="0 0 512 512"
                 width="34"
@@ -358,7 +1085,7 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
               rel="noopener noreferrer"
             >
               <svg
-                class="fill-primary-500"
+                class="fill-white"
                 viewBox="0 0 512 512"
                 width="32"
                 height="32"
@@ -368,1060 +1095,61 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
                 />
               </svg>
             </a>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- End Header -->
-
-    <!-- Start Social -->
-    <div
-      class="hidden lg:block w-10 fixed bottom-0 left-8 xl:left-12 right-auto z-10"
-    >
-      <ul
-        class="flex flex-col items-center list-none m-0 p-0 after:content-[''] after:block after:w-px after:h-36 after:m-auto after:bg-primary-400"
-      >
-        <li
-          class="p-4 transition-all ease-[cubic-bezier(0.34, 1.56, 0.64, 1)] duration-500 hover:-translate-y-1"
-        >
-          <a
-            href="https://github.com/anlisha-maharjan"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><svg height="24" viewBox="0 0 24 24" width="24">
-              <path
-                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                fill="none"
-                stroke="#f26440"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-              /></svg
-          ></a>
-        </li>
-        <li
-          class="p-4 transition-all ease-[cubic-bezier(0.34, 1.56, 0.64, 1)] duration-500 hover:-translate-y-1"
-        >
-          <a
-            href="https://www.instagram.com/anlishamaharjan"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><svg
-              fill="none"
-              height="24"
-              stroke="#f26440"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              width="24"
+            <a
+              href="mailto:anlishamaharjan@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <rect height="20" rx="5" ry="5" width="20" x="2" y="2" />
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-              <line x1="17.5" x2="17.5" y1="6.5" y2="6.5" /></svg
-          ></a>
-        </li>
-        <li
-          class="p-4 transition-all ease-[cubic-bezier(0.34, 1.56, 0.64, 1)] duration-500 hover:-translate-y-1"
-        >
-          <a
-            href="https://np.linkedin.com/in/anlisha-maharjan"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg
-              class="fill-primary-500"
-              height="28"
-              viewBox="0 0 512 512"
-              width="28"
-            >
-              <g>
+              <svg
+                class="fill-white"
+                width="36"
+                height="36"
+                viewBox="0 0 48 48"
+              >
                 <g>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M182.8,384V212.9h-54.9V384H182.8L182.8,384z M157.4,187c18.3,0,29.7-13.1,29.7-29.5    c-0.3-16.7-11.4-29.5-29.4-29.5c-18,0-29.7,12.8-29.7,29.5c0,16.4,11.4,29.5,29,29.5H157.4L157.4,187z"
-                  />
-                  <path
-                    class="st0"
-                    d="M320.6,209c-29.1,0-41.6,16.4-49.6,27.8V213h-55v171h55v-97.4c0-5,0.4-10,1.9-13.5c4-10,13-20.3,28.2-20.3    c19.9,0,27.9,15.3,27.9,37.7V384h55v-99.9C384,232.8,356.8,209,320.6,209z"
-                  />
+                  <g>
+                    <g>
+                      <path
+                        d="M44,40H4c-2.206,0-4-1.794-4-4V12c0-2.206,1.794-4,4-4h40c2.206,0,4,1.794,4,4v24C48,38.206,46.206,40,44,40z M4,10     c-1.103,0-2,0.897-2,2v24c0,1.103,0.897,2,2,2h40c1.103,0,2-0.897,2-2V12c0-1.103-0.897-2-2-2H4z"
+                      />
+                    </g>
+                    <g>
+                      <path
+                        d="M24,29.191L6.457,17.84c-0.464-0.301-0.597-0.919-0.297-1.383s0.919-0.596,1.383-0.297L24,26.809L40.457,16.16     c0.464-0.299,1.083-0.167,1.383,0.297s0.167,1.082-0.297,1.383L24,29.191z"
+                      />
+                    </g>
+                    <g>
+                      <path
+                        d="M6.001,34c-0.323,0-0.641-0.156-0.833-0.445c-0.307-0.46-0.183-1.08,0.277-1.387l9-6c0.46-0.307,1.081-0.183,1.387,0.277     c0.307,0.46,0.183,1.08-0.277,1.387l-9,6C6.384,33.945,6.191,34,6.001,34z"
+                      />
+                    </g>
+                    <g>
+                      <path
+                        d="M41.999,34c-0.19,0-0.383-0.055-0.554-0.168l-9-6c-0.46-0.307-0.584-0.927-0.277-1.387     c0.306-0.46,0.926-0.584,1.387-0.277l9,6c0.46,0.307,0.584,0.927,0.277,1.387C42.64,33.844,42.322,34,41.999,34z"
+                      />
+                    </g>
+                  </g>
                 </g>
-                <path
-                  d="M417.2,64H96.8C79.3,64,64,76.6,64,93.9v321.1c0,17.4,15.3,32.9,32.8,32.9h320.3c17.6,0,30.8-15.6,30.8-32.9V93.9   C448,76.6,434.7,64,417.2,64z M414,416c-1.1,0-313.1,0-314.9,0s-3.1-1.4-3.1-3.1S96,99.1,96,98s1-2,2-2s315,0,316,0s2,1,2,2   c0,23.3,0,314.9,0,316C416,414.9,415.1,416,414,416z"
-                />
-              </g>
-            </svg>
-          </a>
-        </li>
-        <li
-          class="p-4 transition-all ease-[cubic-bezier(0.34, 1.56, 0.64, 1)] duration-500 hover:-translate-y-1"
-        >
-          <a
-            href="https://medium.com/@anlishamaharjan"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg
-              class="fill-primary-500"
-              viewBox="0 0 512 512"
-              width="24"
-              height="24"
-            >
-              <path
-                d="M60.713,135.684c0.637,-6.285 -1.759,-12.499 -6.453,-16.728l-47.807,-57.59l0,-8.603l148.437,0l114.735,251.627l100.872,-251.627l141.503,0.001l0,8.602l-40.874,39.189c-3.525,2.685 -5.272,7.102 -4.541,11.472l0,287.947c-0.731,4.37 1.016,8.786 4.541,11.471l39.917,39.19l0,8.602l-200.782,0l0,-8.602l41.35,-40.147c4.065,-4.061 4.065,-5.257 4.065,-11.468l0,-232.749l-114.973,292.009l-15.536,0l-133.859,-292.009l0,195.709c-1.114,8.228 1.618,16.513 7.41,22.462l53.784,65.235l0,8.603l-152.502,0l0,-8.603l53.784,-65.235c5.749,-5.96 8.321,-14.301 6.929,-22.462l0,-226.296Z"
-              />
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- End Social -->
-
-    <!-- Start Email -->
-    <div
-      class="hidden lg:block w-10 fixed bottom-0 left-auto right-8 xl:right-12 z-10"
-    >
-      <div
-        class="flex flex-col items-center relative after:content-[''] after:block after:w-px after:h-36 after:m-auto after:bg-primary-400"
-      >
-        <a
-          style="writing-mode: vertical-lr"
-          class="text-primary-500 text-base p-2 tracking-widest transition-all ease-[cubic-bezier(0.34, 1.56, 0.64, 1)] duration-500 hover:-translate-y-1"
-          href="mailto:anlishamaharjan@gmail.com"
-          >anlishamaharjan@gmail.com</a
-        >
-      </div>
-    </div>
-    <!-- End Email -->
-
-    <!-- Start Main -->
-    <main>
-      <!-- Start -->
-      <section
-        class="w-full lg:w-[1024px] mx-auto px-6 md:px-12 lg:px-20 xl:px-0 h-[100vh] flex flex-col items-start justify-center"
-      >
-        <h2
-          class="text-4xl md:text-6xl lg:text-7xl font-semibold mb-4 md:mb-6 lg:mb-8 !leading-normal !animate-[fadeInTop_1s_ease-in-out_200ms_forwards]"
-        >
-          <!-- <small class="block text-xl md:text-2xl mb-4 md:mb-6 tracking-widest">
-          Hi,
-        </small> -->
-          Hello!
-          <span
-            class="text-primary-400 block !animate-[fadeInTop_1s_ease-in-out_400ms_forwards]"
-            >I'm Anlisha Maharjan,</span
-          >
-          <span class="block !animate-[fadeInTop_1s_ease-in-out_600ms_forwards]"
-            >Full-stack Developer</span
-          >
-        </h2>
-        <p
-          class="text-lg md:text-xl max-w-xl !animate-[fadeInTop_1s_ease-in-out_800ms_forwards]"
-        >
-          I'm a software engineer specializing in building exceptional digital
-          experiences. Currently, I'm focused on building accessible,
-          human-centered products at
-          <a
-            class="text-primary-400"
-            target="_blank"
-            href="https://www.idnepal.com"
-            >Innovation Developers Nepal.</a
-          >
-        </p>
-        <ul
-          class="hidden md:flex flex-wrap mt-12 lg:mt-14 list-none gap-6 lg:gap-8 !animate-[fadeInTop_1s_ease-in-out_900ms_forwards]"
-        >
-          <li
-            class="transition-all duration-300 ease-in-out hover:scale-[1.15]"
-          >
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-              target="_blank"
-            >
-              <img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-                alt="javascript"
-                width="40"
-                height="40"
-              />
+              </svg>
             </a>
-          </li>
-          <li
-            class="transition-all duration-300 ease-in-out hover:scale-[1.15]"
-          >
-            <a href="https://www.typescriptlang.org/" target="_blank">
-              <img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
-                alt="typescript"
-                width="40"
-                height="40"
-              />
-            </a>
-          </li>
-          <li
-            class="transition-all duration-300 ease-in-out hover:scale-[1.15]"
-          >
-            <a href="https://reactjs.org/" target="_blank">
-              <img
-                src="https://reactnative.dev/img/header_logo.svg"
-                alt="react"
-                width="40"
-                height="40"
-              />
-            </a>
-          </li>
-          <li
-            class="transition-all duration-300 ease-in-out hover:scale-[1.15]"
-          >
-            <a href="https://angular.io" target="_blank">
-              <img
-                src="https://angular.io/assets/images/logos/angular/angular.svg"
-                alt="angular"
-                width="40"
-                height="40"
-              />
-            </a>
-          </li>
-          <li
-            class="transition-all duration-300 ease-in-out hover:scale-[1.15]"
-          >
-            <a href="https://www.cypress.io" target="_blank">
-              <img
-                src="https://raw.githubusercontent.com/simple-icons/simple-icons/6e46ec1fc23b60c8fd0d2f2ff46db82e16dbd75f/icons/cypress.svg"
-                alt="cypress"
-                width="40"
-                height="40"
-              />
-            </a>
-          </li>
-          <li
-            class="transition-all duration-300 ease-in-out hover:scale-[1.15]"
-          >
-            <a href="https://www.mysql.com/" target="_blank">
-              <img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
-                alt="mysql"
-                width="40"
-                height="40"
-              />
-            </a>
-          </li>
-          <li
-            class="transition-all duration-300 ease-in-out hover:scale-[1.15]"
-          >
-            <a href="https://www.php.net" target="_blank">
-              <img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"
-                alt="php"
-                width="40"
-                height="40"
-              />
-            </a>
-          </li>
-          <li
-            class="transition-all duration-300 ease-in-out hover:scale-[1.15]"
-          >
-            <a href="https://www.docker.com/" target="_blank">
-              <img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"
-                alt="docker"
-                width="40"
-                height="40"
-              />
-            </a>
-          </li>
-          <li
-            class="transition-all duration-300 ease-in-out hover:scale-[1.15]"
-          >
-            <a href="https://dev.w3.org/html5/html-author/" target="_blank">
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
-                alt="html5"
-                width="40"
-                height="40"
-              />
-            </a>
-          </li>
-          <li
-            class="transition-all duration-300 ease-in-out hover:scale-[1.15]"
-          >
-            <a href="https://sass-lang.com" target="_blank">
-              <img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
-                alt="sass"
-                width="40"
-                height="40"
-              />
-            </a>
-          </li>
-        </ul>
-      </section>
-      <!-- End -->
-
-      <!-- Start About Me -->
-      <section
-        id="about"
-        class="w-full lg:w-[1024px] mx-auto px-6 md:px-12 lg:px-28 xl:px-20 py-12 lg:py-24 js-show-on-scroll"
-      >
-        <div class="block lg:grid grid-cols-3 gap-12 items-center">
-          <div class="col-span-2 max-w-2xl">
-            <h4
-              class="flex items-center relative text-2xl lg:text-3xl font-semibold mb-8 md:mb-12"
-            >
-              <span class="block bg-body pr-4">About Me</span>
-              <hr class="absolute w-full h-px border-primary-400 -z-10" />
-            </h4>
-            <p class="text-lg md:text-xl mb-4 md:mb-6">
-              Hello! My name is Anlisha and I enjoy creating things that live on
-              the internet. My interest in web development started back in 2016.
-            </p>
-            <p class="text-lg md:text-xl mb-4 md:mb-6">
-              My main focus these days is building accessible, inclusive
-              products and digital experiences at Innovation Developers for a
-              variety of clients.
-            </p>
-            <p class="text-lg md:text-xl mb-4 md:mb-6">
-              Here are a few technologies I’ve been working with recently:
-            </p>
-            <ul class="grid grid-cols-2 gap-2 list-none">
-              <li
-                class="text-sm md:text-base tracking-wider mb-2 pl-5 relative before:content-['▹'] before:md:text-2xl before:text-primary-400 before:absolute before:left-0 before:md:leading-5"
-              >
-                JavaScript (ES6+)
-              </li>
-              <li
-                class="text-sm md:text-base tracking-wider mb-2 pl-5 relative before:content-['▹'] before:md:text-2xl before:text-primary-400 before:absolute before:left-0 before:md:leading-5"
-              >
-                TypeScript
-              </li>
-              <li
-                class="text-sm md:text-base tracking-wider mb-2 pl-5 relative before:content-['▹'] before:md:text-2xl before:text-primary-400 before:absolute before:left-0 before:md:leading-5"
-              >
-                React
-              </li>
-              <li
-                class="text-sm md:text-base tracking-wider mb-2 pl-5 relative before:content-['▹'] before:md:text-2xl before:text-primary-400 before:absolute before:left-0 before:md:leading-5"
-              >
-                React Native
-              </li>
-              <li
-                class="text-sm md:text-base tracking-wider mb-2 pl-5 relative before:content-['▹'] before:md:text-2xl before:text-primary-400 before:absolute before:left-0 before:md:leading-5"
-              >
-                Laravel
-              </li>
-              <li
-                class="text-sm md:text-base tracking-wider mb-2 pl-5 relative before:content-['▹'] before:md:text-2xl before:text-primary-400 before:absolute before:left-0 before:md:leading-5"
-              >
-                Redux
-              </li>
-            </ul>
-          </div>
-          <div
-            class="col-span-1 mt-8 mx-auto w-[65%] md:w-[50%] lg:mt-0 lg:w-full"
-          >
-            <div
-              class="block relative shadow-md rounded-md w-full after:content-[''] after:absolute after:w-full after:h-full after:border-solid after:border-2 after:border-primary-400 after:top-4 after:left-4 after:-z-10 after:rounded-md"
-            >
-              <img
-                class="relative rounded-md w-full"
-                src="https://images.unsplash.com/photo-1610276198568-eb6d0ff53e48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-                title="Anlisha"
-              />
-            </div>
           </div>
         </div>
-      </section>
-      <!-- End About Me -->
-
-      <!-- Start Experience -->
-      <section
-        id="job"
-        class="w-full lg:w-[1024px] mx-auto px-6 md:px-12 lg:px-28 xl:px-20 py-12 lg:py-24 js-show-on-scroll"
-      >
-        <h4
-          class="w-full lg:w-5/6 flex items-center relative text-2xl lg:text-3xl font-semibold mb-8 md:mb-12"
-        >
-          <span class="block bg-body pr-4"> Where I’ve Worked</span>
-          <hr class="absolute w-full h-px border-primary-400 -z-10" />
-        </h4>
-        <div class="flex flex-row md:flex-col md:justify-center">
-          <div class="w-full md:mx-auto">
-            <div
-              class="w-full flex flex-col md:flex-row md:max-w-4xl space-y-8 md:space-y-0"
-              x-data="{tab: 1}"
-            >
-              <div
-                class="w-full md:flex flex-col md:w-1/4 md:justify-start space-y-0 space-x-4 md:space-y-4 md:space-x-0 whitespace-nowrap md:whitespace-normal overflow-auto"
-              >
-                <a
-                  class="inline-block px-6 py-2 text-base md:text-lg tracking-wider whitespace-nowrap md:whitespace-normal"
-                  :class="{'z-20 border-b-2 border-l-0 md:border-l-2 md:border-b-0 border-primary-400 font-bold': tab === 1, '': tab !== 1}"
-                  href="#"
-                  @click.prevent="tab = 1"
-                >
-                  <span class="hidden md:block">Innovation Developers</span>
-                  <span class="block md:hidden">ID Nepal</span>
-                </a>
-                <a
-                  class="inline-block px-6 py-2 text-base md:text-lg tracking-wider whitespace-nowrap md:whitespace-normal"
-                  :class="{'z-20 border-b-2 border-l-0 md:border-l-2 md:border-b-0 border-primary-400 font-bold': tab === 2, '': tab !== 2}"
-                  href="#"
-                  @click.prevent="tab = 2"
-                  @click.prevent="tab = 2"
-                >
-                  <span class="hidden md:block">Amnil Technologies</span>
-                  <span class="block md:hidden">Amnil</span>
-                </a>
-                <a
-                  class="inline-block px-6 py-2 text-base md:text-lg tracking-wider whitespace-nowrap md:whitespace-normal"
-                  :class="{'z-20 border-b-2 border-l-0 md:border-l-2 md:border-b-0 border-primary-400 font-bold': tab === 3, '': tab !== 3}"
-                  href="#"
-                  @click.prevent="tab = 3"
-                  @click.prevent="tab = 3"
-                >
-                  <span class="hidden md:block">Improvement Company Nepal</span>
-                  <span class="block md:hidden">ICN</span>
-                </a>
-                <a
-                  class="inline-block px-6 py-2 text-base md:text-lg tracking-wider whitespace-nowrap md:whitespace-normal"
-                  :class="{'z-20 border-b-2 border-l-0 md:border-l-2 md:border-b-0 border-primary-400 font-bold': tab === 4, '': tab !== 4}"
-                  href="#"
-                  @click.prevent="tab = 4"
-                  @click.prevent="tab = 4"
-                >
-                  <span class="hidden md:block">Grafi Offshore</span>
-                  <span class="block md:hidden">Grafi</span>
-                </a>
-              </div>
-              <div class="w-full md:w-3/4">
-                <div class="space-y-3" x-show="tab === 1">
-                  <h3
-                    class="text-lg md:text-xl font-semibold leading-tight"
-                    x-show="tab === 1"
-                  >
-                    Full Stack Developer
-                    <a
-                      class="text-primary-400"
-                      target="_blank"
-                      href="https://www.idnepal.com"
-                      >@ Innovation Developers</a
-                    >
-                  </h3>
-                  <p class="md:text-lg tracking-wider" x-show="tab === 1">
-                    Jan 2019 - Present
-                  </p>
-                  <ul class="list-none">
-                    <li
-                      class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
-                    >
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.Lorem Ipsum is simply dummy text of
-                      the printing and typesetting industry.
-                    </li>
-                    <li
-                      class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
-                    >
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.Lorem Ipsum is simply dummy text of
-                      the printing and typesetting industry.
-                    </li>
-                    <li
-                      class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
-                    >
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.Lorem Ipsum is simply dummy text of
-                      the printing and typesetting industry.
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="space-y-3" x-show="tab === 2">
-                  <h3
-                    class="text-lg md:text-xl font-semibold leading-tight"
-                    x-show="tab === 2"
-                  >
-                    Software Developer
-                    <a
-                      class="text-primary-400"
-                      target="_blank"
-                      href="https://www.idnepal.com"
-                      >@ Amnil Technologies</a
-                    >
-                  </h3>
-                  <p class="md:text-lg tracking-wider" x-show="tab === 2">
-                    Dec 2016 - Dec 2018
-                  </p>
-                  <ul class="list-none">
-                    <li
-                      class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
-                    >
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.Lorem Ipsum is simply dummy text of
-                      the printing and typesetting industry.
-                    </li>
-                    <li
-                      class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
-                    >
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.Lorem Ipsum is simply dummy text of
-                      the printing and typesetting industry.
-                    </li>
-                    <li
-                      class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
-                    >
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.Lorem Ipsum is simply dummy text of
-                      the printing and typesetting industry.
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="space-y-3" x-show="tab === 3">
-                  <h3
-                    class="text-lg md:text-xl font-semibold leading-tight"
-                    x-show="tab === 3"
-                  >
-                    PHP Developer
-                    <a
-                      class="text-primary-400"
-                      target="_blank"
-                      href="https://www.idnepal.com"
-                      >@ Improvement Company Nepal</a
-                    >
-                  </h3>
-                  <p class="md:text-lg tracking-wider" x-show="tab === 3">
-                    June 2016 - Dec 2016
-                  </p>
-                  <ul class="list-none">
-                    <li
-                      class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
-                    >
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.Lorem Ipsum is simply dummy text of
-                      the printing and typesetting industry.
-                    </li>
-                    <li
-                      class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
-                    >
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.Lorem Ipsum is simply dummy text of
-                      the printing and typesetting industry.
-                    </li>
-                    <li
-                      class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
-                    >
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.Lorem Ipsum is simply dummy text of
-                      the printing and typesetting industry.
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="space-y-3" x-show="tab === 4">
-                  <h3
-                    class="text-lg md:text-xl font-semibold leading-tight"
-                    x-show="tab === 4"
-                  >
-                    PHP Trainee
-                    <a
-                      class="text-primary-400"
-                      target="_blank"
-                      href="https://www.idnepal.com"
-                      >@ Grafi Offshore</a
-                    >
-                  </h3>
-                  <p class="md:text-lg tracking-wider" x-show="tab === 4">
-                    Sep 2015 - June 2016
-                  </p>
-                  <ul class="list-none">
-                    <li
-                      class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
-                    >
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.Lorem Ipsum is simply dummy text of
-                      the printing and typesetting industry.
-                    </li>
-                    <li
-                      class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
-                    >
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.Lorem Ipsum is simply dummy text of
-                      the printing and typesetting industry.
-                    </li>
-                    <li
-                      class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
-                    >
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.Lorem Ipsum is simply dummy text of
-                      the printing and typesetting industry.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Experience -->
-
-      <!-- Start Featured Project -->
-      <section
-        id="project"
-        class="w-full lg:w-[1024px] mx-auto px-6 md:px-12 lg:px-28 xl:px-0 py-12 lg:py-24"
-      >
-        <h4
-          class="w-full lg:w-4/6 flex items-center relative text-2xl lg:text-3xl font-semibold mb-8 md:mb-12"
-        >
-          <span class="block bg-body pr-4"> Some Things I’ve Built</span>
-          <hr class="absolute w-full h-px border-primary-400 -z-10" />
-        </h4>
-        <ul class="list-none">
-          <li
-            class="grid grid-cols-1 lg:grid-cols-12 gap-2 items-center mb-8 lg:mb-20 featured-project-1"
-          >
-            <div
-              class="hidden lg:block col-content-right relative text-left z-20"
-              style="grid-area: 1 / 1 / -1 / 7"
-            >
-              <p
-                class="text-lg font-semibold mb-2 text-primary-400 tracking-widest"
-              >
-                Featured Project
-              </p>
-              <h4 class="text-3xl font-semibold mb-6">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="hover:text-primary-500"
-                  >Lorem Ipsum</a
-                >
-              </h4>
-              <div
-                class="shadow-md rounded-md bg-basicgrad p-8 z-10 mb-4 text-white"
-              >
-                <p class="text-xl">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  dummy text.
-                </p>
-              </div>
-              <ul class="flex justify-start grow flex-wrap list-none">
-                <li class="text-lg mr-6 leading-6">HTML</li>
-                <li class="text-lg mr-6 leading-6">CSS</li>
-                <li class="text-lg leading-6">PHP</li>
-              </ul>
-            </div>
-            <div
-              class="hidden lg:block col-img-left relative shadow-md rounded-md"
-              style="grid-area: 1 / 6 / -1 / -1"
-            >
-              <figure class="w-full h-[24vw] 2xl:h-[16vw]">
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <img
-                    class="rounded-md w-full h-full object-cover"
-                    src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
-                    title=""
-                  />
-                </a>
-              </figure>
-            </div>
-            <div
-              class="lg:hidden flex flex-col bg-basicgrad px-8 h-full py-8 shadow-md rounded-md"
-            >
-              <p
-                class="text-sm md:text-lg mb-2 font-semibold text-primary-400 tracking-widest"
-              >
-                Featured Project
-              </p>
-              <h4 class="text-2xl md:text-3xl font-semibold mb-6 text-white">
-                <a href="#" target="_blank" rel="noopener noreferrer"
-                  >Lorem Ipsum</a
-                >
-              </h4>
-              <p class="text-lg md:text-xl mb-8 text-white">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
-              </p>
-              <ul
-                class="flex justify-start grow flex-wrap list-none text-white"
-              >
-                <li class="text-sm md:text-base mr-6 leading-6">HTML</li>
-                <li class="text-sm md:text-base mr-6 leading-6">CSS</li>
-                <li class="text-sm md:text-base mr-6 leading-6">PHP</li>
-                <li class="text-sm md:text-base leading-6">iTerm2</li>
-              </ul>
-            </div>
-          </li>
-
-          <li
-            class="grid grid-cols-1 lg:grid-cols-12 gap-2 items-center featured-project-2"
-          >
-            <div
-              class="hidden lg:block relative shadow-md rounded-md"
-              style="grid-area: 1 / 6 / -1 / -1; grid-column: 1 / 8"
-            >
-              <figure class="w-full h-[24vw] 2xl:h-[16vw]">
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <img
-                    class="rounded-md w-full h-full object-cover"
-                    src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
-                    title=""
-                  />
-                </a>
-              </figure>
-            </div>
-            <div
-              class="hidden lg:block relative text-right z-20"
-              style="grid-area: 1 / 1 / -1 / 7; grid-column: 7 / -1"
-            >
-              <p
-                class="text-lg font-semibold mb-2 text-primary-400 tracking-widest"
-              >
-                Featured Project
-              </p>
-              <h4 class="text-3xl font-semibold mb-6">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="hover:text-primary-500"
-                  >Lorem Ipsum</a
-                >
-              </h4>
-              <div
-                class="shadow-md rounded-md bg-basicgrad p-8 z-10 mb-4 text-white"
-              >
-                <p class="text-xl">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  dummy text.
-                </p>
-              </div>
-              <ul class="flex justify-end grow flex-wrap list-none">
-                <li class="text-lg mr-6 leading-6">HTML</li>
-                <li class="text-lg mr-6 leading-6">CSS</li>
-                <li class="text-lg leading-6">PHP</li>
-              </ul>
-            </div>
-            <div
-              class="lg:hidden flex flex-col bg-basicgrad px-8 h-full py-8 shadow-md rounded-md"
-            >
-              <p
-                class="text-sm md:text-lg mb-2 font-semibold text-primary-400 tracking-widest"
-              >
-                Featured Project
-              </p>
-              <h4 class="text-2xl md:text-3xl font-semibold mb-6 text-white">
-                <a href="#" target="_blank" rel="noopener noreferrer"
-                  >Lorem Ipsum</a
-                >
-              </h4>
-              <p class="text-lg md:text-xl mb-8 text-white">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
-              </p>
-              <ul
-                class="flex justify-start grow flex-wrap list-none text-white"
-              >
-                <li class="text-sm md:text-base mr-6 leading-6">HTML</li>
-                <li class="text-sm md:text-base mr-6 leading-6">CSS</li>
-                <li class="text-sm md:text-base mr-6 leading-6">PHP</li>
-                <li class="text-sm md:text-base leading-6">iTerm2</li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <!-- End Featured Project -->
-
-      <!-- Start Project -->
-      <section
-        class="w-full lg:w-[1024px] mx-auto px-6 md:px-12 lg:px-28 xl:px-0 py-12 lg:py-24 text-center"
-      >
-        <h4 class="text-2xl md:text-3xl font-semibold mb-2">Projects</h4>
-        <ul
-          class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 list-none"
-        >
-          <li
-            class="flex flex-col items-start justify-between bg-gray-50 relative px-8 h-full py-8 shadow-md rounded-md text-left group cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-2 project-1"
-          >
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <h5
-                class="text-xl md:text-2xl font-semibold mb-4 group-hover:text-primary-500"
-              >
-                Elite Race Podcast App
-              </h5>
-              <p class="text-base md:text-xl mb-6">
-                Podcast App with bottom-tab navigation menu and a full-screen
-                video-player component using react-native-video. Consist
-                Firebase Push Notification.
-              </p>
-              <ul
-                class="flex items-end grow flex-wrap list-none group-hover:text-primary-500"
-              >
-                <li class="text-sm md:text-base mr-6 leading-6">
-                  React Native
-                </li>
-                <li class="text-sm md:text-base mr-6 leading-6">
-                  Firebase Messaging
-                </li>
-                <li class="text-sm md:text-base leading-6">CSS</li>
-              </ul>
-            </a>
-          </li>
-          <li
-            class="flex flex-col items-start justify-between bg-gray-50 relative px-8 h-full py-8 shadow-md rounded-md text-left group cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-2 project-1"
-          >
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <h5
-                class="text-xl md:text-2xl font-semibold mb-4 group-hover:text-primary-500"
-              >
-                Hayk App
-              </h5>
-              <p class="text-base md:text-xl mb-6">
-                Platform that provides accessible shared electric cars where
-                people live and work, to help live a sustainable life.
-              </p>
-              <ul
-                class="flex items-end grow flex-wrap list-none group-hover:text-primary-500"
-              >
-                <li class="text-sm md:text-base mr-6 leading-6">Ionic</li>
-                <li class="text-sm md:text-base mr-6 leading-6">Angular</li>
-                <li class="text-sm md:text-base mr-6 leading-6">HTML</li>
-                <li class="text-sm md:text-base leading-6">SCSS</li>
-              </ul>
-            </a>
-          </li>
-          <li
-            class="flex flex-col items-start justify-between bg-gray-50 relative px-8 h-full py-8 shadow-md rounded-md text-left group cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-2 project-1"
-          >
-            <a
-              href="https://shangrilachauffeurs.com.au/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h5
-                class="text-xl md:text-2xl font-semibold mb-4 group-hover:text-primary-500"
-              >
-                Shangri-La Chauffeurs
-              </h5>
-              <p class="text-base md:text-xl mb-6">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
-              </p>
-              <ul
-                class="flex items-end grow flex-wrap list-none group-hover:text-primary-500"
-              >
-                <li class="text-sm md:text-base mr-6 leading-6">React</li>
-                <li class="text-sm md:text-base mr-6 leading-6">Material-UI</li>
-                <li class="text-sm md:text-base mr-6 leading-6">Redux</li>
-                <li class="text-sm md:text-base mr-6 leading-6">SCSS</li>
-              </ul>
-            </a>
-          </li>
-          <li
-            class="flex flex-col items-start justify-between bg-gray-50 relative px-8 h-full py-8 shadow-md rounded-md text-left group cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-2 project-2"
-          >
-            <a
-              href="http://database.dnpwc.gov.np"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h5
-                class="text-xl md:text-2xl font-semibold mb-4 group-hover:text-primary-500"
-              >
-                DNPWC
-              </h5>
-              <p class="text-base md:text-xl mb-6">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
-              </p>
-              <ul
-                class="flex items-end grow flex-wrap list-none group-hover:text-primary-500"
-              >
-                <li class="text-sm md:text-base mr-6 leading-6">Laravel</li>
-                <li class="text-sm md:text-base mr-6 leading-6">HTML</li>
-                <li class="text-sm md:text-base mr-6 leading-6">SCSS</li>
-              </ul>
-            </a>
-          </li>
-          <li
-            class="flex flex-col items-start justify-between bg-gray-50 relative px-8 h-full py-8 shadow-md rounded-md text-left group cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-2 project-2"
-          >
-            <a
-              href="https://sipradi.com.np"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h5
-                class="text-xl md:text-2xl font-semibold mb-4 group-hover:text-primary-500"
-              >
-                SIPRADI
-              </h5>
-              <p class="text-base md:text-xl mb-6">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
-              </p>
-              <ul
-                class="flex items-end grow flex-wrap list-none group-hover:text-primary-500"
-              >
-                <li class="text-sm md:text-base mr-6 leading-6">HTML</li>
-                <li class="text-sm md:text-base mr-6 leading-6">CSS</li>
-                <li class="text-sm md:text-base mr-6 leading-6">PHP</li>
-              </ul>
-            </a>
-          </li>
-          <li
-            class="flex flex-col items-start justify-between bg-gray-50 relative px-8 h-full py-8 shadow-md rounded-md text-left group cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-2 project-2"
-          >
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <h5
-                class="text-xl md:text-2xl font-semibold mb-4 group-hover:text-primary-500"
-              >
-                Lorem Ipsum is simply dummy text.
-              </h5>
-              <p class="text-base md:text-xl mb-6">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
-              </p>
-              <ul
-                class="flex items-end grow flex-wrap list-none group-hover:text-primary-500"
-              >
-                <li class="text-sm md:text-base mr-6 leading-6">HTML</li>
-                <li class="text-sm md:text-base mr-6 leading-6">CSS</li>
-                <li class="text-sm md:text-base mr-6 leading-6">PHP</li>
-              </ul>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <!-- End Project -->
-
-      <!-- Start Contact -->
-      <section
-        id="contact"
-        class="w-full lg:w-[1024px] mx-auto px-6 py-16 lg:py-24 flex flex-col items-center justify-center js-show-on-scroll"
-      >
-        <h6
-          class="text-xl lg:text-2xl font-normal mb-6 text-primary-500 tracking-wider"
-        >
-          Say hi!
-        </h6>
-        <h3 class="text-5xl lg:text-6xl font-semibold mb-6">Contact me</h3>
-        <p class="text-lg md:text-xl mb-12 text-center">
-          Drop Me a Line or Two, my
-          <a
-            class="text-primary-500"
-            href="mailto:anlishamaharjan@gmail.com"
-            rel="noopener noreferrer"
-            >inbox</a
-          >
-          is always open. <br />
-          Whether you have a question or want to work together!
-        </p>
       </section>
       <!-- End Contact -->
     </main>
     <!-- End Main -->
     <!-- Start Footer -->
-    <footer class="flex flex-col items-center justify-center py-8">
-      <div class="block lg:hidden">
-        <div class="flex space-x-8 mb-6">
-          <a
-            href="https://github.com/anlisha-maharjan"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><svg height="32" viewBox="0 0 24 24" width="32">
-              <path
-                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                fill="none"
-                stroke="#f26440"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-              /></svg
-          ></a>
-          <a
-            href="https://www.instagram.com/anlishamaharjan"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><svg
-              fill="none"
-              height="32"
-              stroke="#f26440"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              width="32"
-            >
-              <rect height="20" rx="5" ry="5" width="20" x="2" y="2" />
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-              <line x1="17.5" x2="17.5" y1="6.5" y2="6.5" /></svg
-          ></a>
-          <a
-            href="https://np.linkedin.com/in/anlisha-maharjan"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg
-              class="fill-primary-500"
-              height="34"
-              viewBox="0 0 512 512"
-              width="34"
-            >
-              <g>
-                <g>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M182.8,384V212.9h-54.9V384H182.8L182.8,384z M157.4,187c18.3,0,29.7-13.1,29.7-29.5    c-0.3-16.7-11.4-29.5-29.4-29.5c-18,0-29.7,12.8-29.7,29.5c0,16.4,11.4,29.5,29,29.5H157.4L157.4,187z"
-                  />
-                  <path
-                    class="st0"
-                    d="M320.6,209c-29.1,0-41.6,16.4-49.6,27.8V213h-55v171h55v-97.4c0-5,0.4-10,1.9-13.5c4-10,13-20.3,28.2-20.3    c19.9,0,27.9,15.3,27.9,37.7V384h55v-99.9C384,232.8,356.8,209,320.6,209z"
-                  />
-                </g>
-                <path
-                  d="M417.2,64H96.8C79.3,64,64,76.6,64,93.9v321.1c0,17.4,15.3,32.9,32.8,32.9h320.3c17.6,0,30.8-15.6,30.8-32.9V93.9   C448,76.6,434.7,64,417.2,64z M414,416c-1.1,0-313.1,0-314.9,0s-3.1-1.4-3.1-3.1S96,99.1,96,98s1-2,2-2s315,0,316,0s2,1,2,2   c0,23.3,0,314.9,0,316C416,414.9,415.1,416,414,416z"
-                />
-              </g>
-            </svg>
-          </a>
-          <a
-            href="https://medium.com/@anlishamaharjan"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg
-              class="fill-primary-500"
-              viewBox="0 0 512 512"
-              width="32"
-              height="32"
-            >
-              <path
-                d="M60.713,135.684c0.637,-6.285 -1.759,-12.499 -6.453,-16.728l-47.807,-57.59l0,-8.603l148.437,0l114.735,251.627l100.872,-251.627l141.503,0.001l0,8.602l-40.874,39.189c-3.525,2.685 -5.272,7.102 -4.541,11.472l0,287.947c-0.731,4.37 1.016,8.786 4.541,11.471l39.917,39.19l0,8.602l-200.782,0l0,-8.602l41.35,-40.147c4.065,-4.061 4.065,-5.257 4.065,-11.468l0,-232.749l-114.973,292.009l-15.536,0l-133.859,-292.009l0,195.709c-1.114,8.228 1.618,16.513 7.41,22.462l53.784,65.235l0,8.603l-152.502,0l0,-8.603l53.784,-65.235c5.749,-5.96 8.321,-14.301 6.929,-22.462l0,-226.296Z"
-              />
-            </svg>
-          </a>
-        </div>
-      </div>
-      <p class="text-base md:text-lg tracking-wider">
+    <footer
+      class="flex flex-col items-center justify-center py-3 bg-secondary-500 text-white"
+    >
+      <p class="text-sm md:text-base">
         <a
           href="https://github.com/anlisha-maharjan/portfolio-v1"
           rel="noopener noreferrer"
           target="_blank"
           class="hover:text-primary-400"
-          >Crafted by Anlisha Maharjan</a
-        >
+          >Developed with ❤ by Anlisha Maharjan. © 2022 All rights reserved
+        </a>
       </p>
     </footer>
     <!-- End Footer -->
@@ -1453,6 +1181,8 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js"></script>
     <script src="./tailwind.config.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <script>
       var isChrome =
         /Chrome/.test(navigator.userAgent) &&
@@ -1463,6 +1193,68 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
           "none";
         document.getElementsByClassName("infinity")[0].style.display = "block";
       }
+
+      // particlesJS("particles-js", {
+      //   particles: {
+      //     number: { value: 20, density: { enable: true, value_area: 475 } },
+      //     color: { value: "#ffffff" },
+      //     shape: {
+      //       type: "circle",
+      //       stroke: { width: 0, color: "#000000" },
+      //       polygon: { nb_sides: 5 },
+      //       image: { src: "img/github.svg", width: 100, height: 100 },
+      //     },
+      //     opacity: {
+      //       value: 0.5,
+      //       random: false,
+      //       anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
+      //     },
+      //     size: {
+      //       value: 3,
+      //       random: true,
+      //       anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
+      //     },
+      //     line_linked: {
+      //       enable: true,
+      //       distance: 150,
+      //       color: "#ffffff",
+      //       opacity: 0.4,
+      //       width: 1,
+      //     },
+      //     move: {
+      //       enable: true,
+      //       speed: 6,
+      //       direction: "none",
+      //       random: false,
+      //       straight: false,
+      //       out_mode: "out",
+      //       bounce: false,
+      //       attract: { enable: false, rotateX: 600, rotateY: 1200 },
+      //     },
+      //   },
+      //   interactivity: {
+      //     detect_on: "canvas",
+      //     events: {
+      //       onhover: { enable: false, mode: "repulse" },
+      //       onclick: { enable: false, mode: "push" },
+      //       resize: true,
+      //     },
+      //     modes: {
+      //       grab: { distance: 400, line_linked: { opacity: 1 } },
+      //       bubble: {
+      //         distance: 400,
+      //         size: 40,
+      //         duration: 2,
+      //         opacity: 8,
+      //         speed: 3,
+      //       },
+      //       repulse: { distance: 200, duration: 0.4 },
+      //       push: { particles_nb: 4 },
+      //       remove: { particles_nb: 2 },
+      //     },
+      //   },
+      //   retina_detect: true,
+      // });
 
       setTimeout(function () {
         $(".loader").hide();
@@ -1525,7 +1317,7 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
       window.addEventListener("load", () => {
         // Get all the elements you want to show on scroll
         const targets = document.querySelectorAll(
-          ".js-show-on-scroll, .featured-project-1, .featured-project-2, .project-1 , .project-2"
+          ".js-show-on-scroll, .featured-project-1, .featured-project-2, .project-1 , .project-2, .project-3"
         );
 
         // Callback for IntersectionObserver
