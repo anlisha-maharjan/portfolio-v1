@@ -2,6 +2,31 @@
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/favicon/safari-pinned-tab.svg"
+      color="#da532c"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <meta
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
       name="viewport"
@@ -303,7 +328,7 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
     <main>
       <!-- Start -->
       <section class="h-[100vh] flex flex-col items-start justify-center">
-        <!-- <div id="particles-js"></div> -->
+        <div id="particles-js"></div>
         <div class="container">
           <h2
             class="text-4xl md:text-6xl lg:text-7xl font-semibold mb-4 md:mb-6 lg:mb-8 !leading-normal !animate-[fadeInTop_1s_ease-in-out_200ms_forwards]"
@@ -751,7 +776,7 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
 
       <!-- Start Project -->
       <section id="project" class="py-12 lg:py-24 text-center">
-        <div class="container">
+        <div class="container" x-data="{ showMore: false }">
           <h4 class="text-2xl md:text-3xl font-semibold mb-2">
             Selected Works
           </h4>
@@ -790,7 +815,7 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
                 class="w-full h-full flex flex-col items-center justify-center relative p-4 rounded-md shadow-md overflow-hidden transition-all duration-300 z-1 bg-gray-50 xl:hover:scale-110 xl:hover:z-10 group"
               >
                 <img
-                  src="https://images.pexels.com/photos/10980701/pexels-photo-10980701.jpeg"
+                  src="./assets/image/hayk.jpg"
                   class="absolute top-0 left-0 transition-all duration-1000 -z-1 xl:group-hover:scale-110 xl:group-hover:opacity-25"
                 />
                 <h4
@@ -846,7 +871,7 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
                 </div>
               </div>
             </li>
-            <li class="project-1">
+            <li class="project-2">
               <div
                 class="w-full h-full flex flex-col items-center justify-center relative p-4 rounded-md shadow-md overflow-hidden transition-all duration-300 z-1 bg-gray-50 xl:hover:scale-110 xl:hover:z-10 group"
               >
@@ -932,7 +957,7 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
                 </div>
               </div>
             </li>
-            <li class="project-2">
+            <li class="project-3" x-bind:class="! showMore ? 'hidden' : ''">
               <div
                 class="w-full h-full flex flex-col items-center justify-center relative p-4 rounded-md shadow-md overflow-hidden transition-all duration-300 z-1 bg-gray-50 xl:hover:scale-110 xl:hover:z-10 group"
               >
@@ -961,7 +986,7 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
                 </div>
               </div>
             </li>
-            <li class="project-3">
+            <li class="project-3" x-bind:class="! showMore ? 'hidden' : ''">
               <div
                 class="w-full h-full flex flex-col items-center justify-center relative p-4 rounded-md shadow-md overflow-hidden transition-all duration-300 z-1 bg-gray-50 xl:hover:scale-110 xl:hover:z-10 group"
               >
@@ -991,6 +1016,16 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
               </div>
             </li>
           </ul>
+          <div class="flex justify-center items-center pt-10">
+            <button
+              x-on:click="showMore = ! showMore"
+              type="button"
+              class="bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 text-base text-white font-semibold h-12 px-6 rounded-lg flex items-center dark:bg-slate-700 dark:hover:bg-slate-600 pointer-events-auto"
+            >
+              <span x-show="showMore">Show less...</span>
+              <span x-show="!showMore">Show more..</span>
+            </button>
+          </div>
         </div>
       </section>
       <!-- End Project -->
@@ -1194,67 +1229,116 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
         document.getElementsByClassName("infinity")[0].style.display = "block";
       }
 
-      // particlesJS("particles-js", {
-      //   particles: {
-      //     number: { value: 20, density: { enable: true, value_area: 475 } },
-      //     color: { value: "#ffffff" },
-      //     shape: {
-      //       type: "circle",
-      //       stroke: { width: 0, color: "#000000" },
-      //       polygon: { nb_sides: 5 },
-      //       image: { src: "img/github.svg", width: 100, height: 100 },
-      //     },
-      //     opacity: {
-      //       value: 0.5,
-      //       random: false,
-      //       anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
-      //     },
-      //     size: {
-      //       value: 3,
-      //       random: true,
-      //       anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
-      //     },
-      //     line_linked: {
-      //       enable: true,
-      //       distance: 150,
-      //       color: "#ffffff",
-      //       opacity: 0.4,
-      //       width: 1,
-      //     },
-      //     move: {
-      //       enable: true,
-      //       speed: 6,
-      //       direction: "none",
-      //       random: false,
-      //       straight: false,
-      //       out_mode: "out",
-      //       bounce: false,
-      //       attract: { enable: false, rotateX: 600, rotateY: 1200 },
-      //     },
-      //   },
-      //   interactivity: {
-      //     detect_on: "canvas",
-      //     events: {
-      //       onhover: { enable: false, mode: "repulse" },
-      //       onclick: { enable: false, mode: "push" },
-      //       resize: true,
-      //     },
-      //     modes: {
-      //       grab: { distance: 400, line_linked: { opacity: 1 } },
-      //       bubble: {
-      //         distance: 400,
-      //         size: 40,
-      //         duration: 2,
-      //         opacity: 8,
-      //         speed: 3,
-      //       },
-      //       repulse: { distance: 200, duration: 0.4 },
-      //       push: { particles_nb: 4 },
-      //       remove: { particles_nb: 2 },
-      //     },
-      //   },
-      //   retina_detect: true,
-      // });
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 16,
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+          },
+          color: {
+            value: "#f26440",
+          },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 0,
+              color: "#f26440",
+            },
+            polygon: {
+              nb_sides: 5,
+            },
+            image: {
+              src: "img/github.svg",
+              width: 100,
+              height: 100,
+            },
+          },
+          opacity: {
+            value: 0.2,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 1,
+              opacity_min: 0.1,
+              sync: false,
+            },
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 40,
+              size_min: 0.1,
+              sync: false,
+            },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#f26440",
+            opacity: 1,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 4,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: false,
+              mode: "repulse",
+            },
+            onclick: {
+              enable: false,
+              mode: "push",
+            },
+            resize: true,
+          },
+          modes: {
+            grab: {
+              distance: 400,
+              line_linked: {
+                opacity: 1,
+              },
+            },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
+            push: {
+              particles_nb: 4,
+            },
+            remove: {
+              particles_nb: 2,
+            },
+          },
+        },
+        retina_detect: true,
+      });
 
       setTimeout(function () {
         $(".loader").hide();
