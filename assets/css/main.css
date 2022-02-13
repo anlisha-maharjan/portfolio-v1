@@ -20,7 +20,7 @@ body {
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #89503f;
+    background-color: #004e70;
     border-radius: 100px;
   }
 }
@@ -201,6 +201,21 @@ canvas {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.banner-image {
+  -webkit-mask-image: url("../image/banner.svg");
+  mask-image: url("../image/banner.svg");
+  -webkit-mask-position: center center;
+  mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  will-change: transform;
 }
 
 /*# sourceMappingURL=main.css.map */
