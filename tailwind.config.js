@@ -47,6 +47,7 @@ module.exports = {
       },
       backgroundImage: {
         basicgrad: "linear-gradient(135deg, #f26440 0%,#725690 100%)",
+        mobile: "linear-gradient(to bottom, #6695a9 0%,#004e70 100%)",
       },
       backgroundColor: {
         body: "#ECF0F3",
@@ -56,6 +57,9 @@ module.exports = {
       },
       animation: {
         fadeInTop: "fadeInTop 1s ease-in forwards",
+      },
+      dropShadow: {
+        mobile: "0 4px 30px rgb(0 0 0 / 10%)",
       },
       keyframes: {
         fadeInTop: {

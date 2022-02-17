@@ -489,3 +489,113 @@
   </li>
 </ul> -->
 <!-- End Toolset -->
+
+<!-- <body
+  class="bg-body text-default font-body text-base leading-normal"
+  x-data="{ isMobileMenuOpen: false }"
+  @keydown.escape="isMobileMenuOpen = false"
+  :class="{ 'overflow-hidden lg:overflow-auto': isMobileMenuOpen }"
+></body> -->
+
+<!-- Hamburger Menu -->
+<div class="block lg:hidden">
+  <button
+    type="button"
+    @click="isMobileMenuOpen = !isMobileMenuOpen"
+    class="relative z-20"
+    :class="{ 'transition transform-180': isMobileMenuOpen }"
+  >
+    <!-- Close Svg -->
+    <svg viewBox="0 0 32 32" height="32" width="32" x-show="isMobileMenuOpen">
+      <g>
+        <line
+          fill="none"
+          stroke="#f26440"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          x1="7"
+          x2="25"
+          y1="7"
+          y2="25"
+        />
+        <line
+          fill="none"
+          stroke="#f26440"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          x1="7"
+          x2="25"
+          y1="25"
+          y2="7"
+        />
+      </g>
+    </svg>
+    <!-- Hamburger Svg -->
+    <svg
+      height="24"
+      viewBox="0 0 32 32"
+      width="24"
+      class="fill-primary-500"
+      x-show="!isMobileMenuOpen"
+    >
+      <path
+        d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+      />
+    </svg>
+  </button>
+</div>
+
+<!-- Mobile Menu -->
+<nav
+  class="w-full h-[100vh] fixed top-0 right-0 bg-gray-50 hidden"
+  :class="{ 'flex flex-col items-center': isMobileMenuOpen, 'hidden': !isMobileMenuOpen }"
+  @click.away="isMobileMenuOpen = false"
+  x-show.transition="true"
+>
+  <ul
+    class="flex flex-col items-center justify-center w-[50%] list-none space-y-9 mt-auto mb-auto"
+  >
+    <li class="">
+      <a
+        href="#about"
+        class="no-underline text-xl hover:text-primary-400"
+        @click="isMobileMenuOpen = false"
+        >About Me</a
+      >
+    </li>
+    <li class="">
+      <a
+        href="#job"
+        class="no-underline text-xl hover:text-primary-400"
+        @click="isMobileMenuOpen = false"
+        >Experience</a
+      >
+    </li>
+    <li class="">
+      <a
+        href="#project"
+        class="no-underline text-xl hover:text-primary-400"
+        @click="isMobileMenuOpen = false"
+        >Explore Work</a
+      >
+    </li>
+    <li class="">
+      <a
+        href="#contact"
+        class="no-underline text-xl hover:text-primary-400"
+        @click="isMobileMenuOpen = false"
+        >Contact</a
+      >
+    </li>
+    <!-- <li class="">
+    <a
+      href="#"
+      class="no-underline text-xl hover:text-primary-400"
+      @click="isMobileMenuOpen = false"
+      >Resume</a
+    >
+  </li> -->
+  </ul>
+</nav>
