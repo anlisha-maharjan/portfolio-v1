@@ -825,7 +825,7 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
               </p>
               <p class="text-lg md:text-xl mb-4 md:mb-6">
                 In 2018, I graduated from St. Xavier's College with a focus on
-                software development and with a mantra to always be curious. I
+                software development and with a mantra to always stay curious. I
                 can plan, build, launch, and maintain a web application
                 myself—did I mention that I build mobile apps too? I have worked
                 on a handful of cross-platform iOS and Android apps with React
@@ -862,7 +862,7 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
           <h4
             class="w-full lg:w-5/6 flex items-center relative text-2xl lg:text-3xl font-semibold mb-8 md:mb-12"
           >
-            <span class="block bg-body pr-4"> Where I’ve Worked</span>
+            <span class="block bg-body pr-4"> Experience</span>
             <hr class="absolute w-full h-px border-primary-400 -z-10" />
           </h4>
           <div class="flex flex-row md:flex-col md:justify-center">
@@ -890,17 +890,27 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
                     :class="{'z-20 border-b-2 border-l-0 md:border-l-2 md:border-b-0 border-primary-400 font-bold': tab === 2, '': tab !== 2}"
                     href="#"
                     @click.prevent="tab = 2"
-                    @click.prevent="tab = 2"
                   >
-                    <span class="hidden md:block">Amnil Technologies</span>
-                    <span class="block md:hidden">Amnil</span>
+                    <span class="hidden md:block">'We' for Change</span>
+                    <span class="block md:hidden">'We' for Change</span>
                   </a>
+
                   <a
                     class="inline-block px-6 py-2 text-base md:text-lg tracking-wider whitespace-nowrap md:whitespace-normal"
                     :class="{'z-20 border-b-2 border-l-0 md:border-l-2 md:border-b-0 border-primary-400 font-bold': tab === 3, '': tab !== 3}"
                     href="#"
                     @click.prevent="tab = 3"
                     @click.prevent="tab = 3"
+                  >
+                    <span class="hidden md:block">Amnil Technologies</span>
+                    <span class="block md:hidden">Amnil</span>
+                  </a>
+                  <a
+                    class="inline-block px-6 py-2 text-base md:text-lg tracking-wider whitespace-nowrap md:whitespace-normal"
+                    :class="{'z-20 border-b-2 border-l-0 md:border-l-2 md:border-b-0 border-primary-400 font-bold': tab === 4, '': tab !== 4}"
+                    href="#"
+                    @click.prevent="tab = 4"
+                    @click.prevent="tab = 4"
                   >
                     <span class="hidden md:block"
                       >Improvement Company Nepal</span
@@ -909,10 +919,10 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
                   </a>
                   <a
                     class="inline-block px-6 py-2 text-base md:text-lg tracking-wider whitespace-nowrap md:whitespace-normal"
-                    :class="{'z-20 border-b-2 border-l-0 md:border-l-2 md:border-b-0 border-primary-400 font-bold': tab === 4, '': tab !== 4}"
+                    :class="{'z-20 border-b-2 border-l-0 md:border-l-2 md:border-b-0 border-primary-400 font-bold': tab === 5, '': tab !== 5}"
                     href="#"
-                    @click.prevent="tab = 4"
-                    @click.prevent="tab = 4"
+                    @click.prevent="tab = 5"
+                    @click.prevent="tab = 5"
                   >
                     <span class="hidden md:block">Grafi Offshore</span>
                     <span class="block md:hidden">Grafi</span>
@@ -964,6 +974,40 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
                       class="text-lg md:text-xl font-semibold leading-tight"
                       x-show="tab === 2"
                     >
+                      Volunteer IT Consultant
+                      <a
+                        class="text-primary-400"
+                        target="_blank"
+                        href="https://www.weforchange.org"
+                        >@ 'We' for Change
+                      </a>
+                    </h3>
+                    <p class="md:text-lg tracking-wider" x-show="tab === 2">
+                      Jan 2020 - Mar 2021
+                    </p>
+                    <ul class="list-none">
+                      <li
+                        class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
+                      >
+                        Complete overhaul and redesign of 'We' for change
+                        organization’s website using Wordpress.
+                      </li>
+                      <li
+                        class="text-lg md:text-xl mb-4 pl-6 relative before:content-['▹'] before:text-lg before:md:text-2xl before:text-primary-400 before:absolute before:left-0"
+                      >
+                        Collaborated with team to spearhead Let’s Meditate
+                        platform; an interactive learning platform which aims at
+                        bringing mental wellbeing through the medium of
+                        meditative process, mindfulness and self-awareness.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="space-y-3" x-show="tab === 3">
+                    <h3
+                      class="text-lg md:text-xl font-semibold leading-tight"
+                      x-show="tab === 3"
+                    >
                       Software Developer
                       <a
                         class="text-primary-400"
@@ -972,7 +1016,7 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
                         >@ Amnil Technologies</a
                       >
                     </h3>
-                    <p class="md:text-lg tracking-wider" x-show="tab === 2">
+                    <p class="md:text-lg tracking-wider" x-show="tab === 3">
                       Dec 2016 - Dec 2018
                     </p>
                     <ul class="list-none">
@@ -1006,10 +1050,10 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
                     </ul>
                   </div>
 
-                  <div class="space-y-3" x-show="tab === 3">
+                  <div class="space-y-3" x-show="tab === 4">
                     <h3
                       class="text-lg md:text-xl font-semibold leading-tight"
-                      x-show="tab === 3"
+                      x-show="tab === 4"
                     >
                       Software Developer
                       <a
@@ -1019,7 +1063,7 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
                         >@ Improvement Company Nepal</a
                       >
                     </h3>
-                    <p class="md:text-lg tracking-wider" x-show="tab === 3">
+                    <p class="md:text-lg tracking-wider" x-show="tab === 4">
                       June 2016 - Dec 2016
                     </p>
                     <ul class="list-none">
@@ -1050,10 +1094,10 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
                     </ul>
                   </div>
 
-                  <div class="space-y-3" x-show="tab === 4">
+                  <div class="space-y-3" x-show="tab === 5">
                     <h3
                       class="text-lg md:text-xl font-semibold leading-tight"
-                      x-show="tab === 4"
+                      x-show="tab === 5"
                     >
                       Software / Web Development Intern
                       <a
@@ -1063,7 +1107,7 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
                         >@ Grafi Offshore</a
                       >
                     </h3>
-                    <p class="md:text-lg tracking-wider" x-show="tab === 4">
+                    <p class="md:text-lg tracking-wider" x-show="tab === 5">
                       Sep 2015 - June 2016
                     </p>
                     <ul class="list-none">
@@ -1487,10 +1531,7 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
           </h3>
 
           <p class="text-lg md:text-xl mb-12 text-center">
-            <!-- Just keeping this simple. -->
-            <!-- Drop Me a Line or Two, my inbox is always open.-->
-            <!-- Whether you have a question or want to work together. -->
-            Go ahead... Don't be shy
+            Whether you have a question or want to work together.
           </p>
           <div class="flex gap-8">
             <a
@@ -1625,7 +1666,7 @@ c-0.8,0.1-1.8,0.4-2.8,1.1c-1.6,1.2-2.6,2.6-3,4.1c-0.1,0.4-0.2,0.7-0.2,1C224.3,87
           href="https://github.com/anlisha-maharjan/portfolio-v1"
           rel="noopener noreferrer"
           target="_blank"
-          >Developed with ❤ by Anlisha Maharjan. © 2022 All rights reserved
+          >Developed with ❤ by Anlisha Maharjan
         </a>
       </p>
     </footer>
